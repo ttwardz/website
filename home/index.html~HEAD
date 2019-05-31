@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 50px;
+}
+
+body {
+  fontsize: 16;
+  color: white;
+  background-color: rgb(42, 42, 42);
+}
+
+.bullets {
+  margin-left:1in;
+}
+
+.links {
+  background-color: rgb(35, 35, 35);
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 200px;
+}
+
+</style>
+<title>Home</title>
+</head>
+
+<body>
+<h1>Tom Twardzik</h1>
+
+<div class="bullets">
+<h2>Creative Writer. Content Architect. SEO.</h2>
+<ul>
+	<li>E: ttwardzik@gmail.com</li>
+	<li>P: (570) 985-8407</li>
+	<li>Brooklyn, NY</li>
+</ul>
+</div>
+
+<button style="margin-left:1in;">Read more.</button>
+
+<br>
+<br>
+<br>
+
+<div class="links">
+<h2>Site Links</h2>
+<a href="">Link</a>
+<a href="">Link</a>
+<a href="">Link</a>
+<a href="">Link</a>
+</div>
+
+
+</body>
+
+</html>
