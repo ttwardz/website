@@ -1,0 +1,39 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  fontsize: 16;
+  color: rgb(28, 28, 30);
+  background-color: rgb(242, 242, 247);
+}
+
+h1 {
+  color: rgb(28, 28, 30);
+  line-height: 20px;
+  font-size: 60px;
+}
+
+h2 {
+  color: rgb(44, 44, 46);
+  line-height: 20px;
+  font-size: 40px;
+}
+
+h3 {
+  color: rgb(44, 44, 46);
+}
+
+.table {
+  width: 10px;
+  color: rgb(28, 28, 30);
+  /* border-collapse: collapse; */
+}
+
+td {
+  /* border-bottom: .5px solid rgb(155, 155, 155); */
+}
+
+.links {
+  
+}
