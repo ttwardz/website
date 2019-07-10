@@ -1,10 +1,13 @@
+/* This is Style 2. It features a white background with gray content blocks, whereas Style 1 features a gray background with white content blocks. */
+
+/* Essentially, this is a "positive" color scheme while Style 1 is a "negative" color scheme (in my own parlance, that is). */
+
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 40px;
   width: 80%;
-  fontsize: 16;
   color: rgb(28, 28, 30);
-  background-color: rgb(242, 242, 247);
+  background: white;
 }
 
 h1 {
@@ -16,7 +19,6 @@ h1 {
 h2 {
   color: rgb(44, 44, 46);
   line-height: 36px;
-  font-size: 40px;
   margin: 0;
 }
 
@@ -62,4 +64,10 @@ a:visited {
   cursor: pointer;
   padding: 10px;
   margin: 40px 20px;
+}
+
+.contentBlock {
+  background: rgb(242, 242, 247);
+  padding: 16px;
+  border-radius: 10px;
 }
