@@ -3,7 +3,7 @@ body {
   margin: 40px;
   width: 80%;
   color: rgb(28, 28, 30);
-  background-color: rgb(242, 242, 247);
+  background: rgb(242, 242, 247);
 }
 
 h1 {
@@ -15,7 +15,6 @@ h1 {
 h2 {
   color: rgb(44, 44, 46);
   line-height: 36px;
-  font-size: 40px;
   margin: 0;
 }
 
@@ -61,4 +60,10 @@ a:visited {
   cursor: pointer;
   padding: 10px;
   margin: 40px 20px;
+}
+
+.contentBlock {
+  background: rgb(250, 252, 255);
+  padding: 16px;
+  border-radius: 10px;
 }
