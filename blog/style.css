@@ -35,8 +35,8 @@ td {
   /* border-bottom: .5px solid rgb(155, 155, 155); */
 }
 
-.links {
-
+.nav {
+  font-weight: bold;
 }
 
 /* mouse over link */
