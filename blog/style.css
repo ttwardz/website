@@ -35,6 +35,8 @@ td {
   /* border-bottom: .5px solid rgb(155, 155, 155); */
 }
 
+/* ---------- */
+/* Top Nav -- style, colors (un/visited, hover, etc.) */
 .nav {
   font-weight: bold;
 }
@@ -72,4 +74,13 @@ a:visited {
   /* background: rgb(222, 119, 86);
   padding:  10px;
   border-radius: 10px; */
+}
+
+/* Centers an image, button, etc.: */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 75%;
 }
