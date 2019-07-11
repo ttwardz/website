@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   color: rgb(44, 44, 46);
   line-height: 36px;
   margin: 0;
@@ -59,11 +60,21 @@ a:visited {
   text-align: center;
   cursor: pointer;
   padding: 10px;
-  margin: 40px 20px;
+  margin: 10% 40%;
+}
+
+.buttonCentered {
+  text-align:center;
+  margin:auto;
 }
 
 .contentBlock {
   background: rgb(250, 252, 255);
   padding: 16px;
   border-radius: 10px;
+}
+
+.date {
+  text-align: center;
+  
 }
