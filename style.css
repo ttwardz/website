@@ -1,7 +1,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 40px;
-  width: 80%;
+  margin: 2.25rem;
+  width: 90%;
   color: rgb(28, 28, 30);
   background-color: rgb(242, 242, 247);
 }
@@ -15,7 +15,7 @@ h1 {
 h2 {
   color: rgb(44, 44, 46);
   line-height: 36px;
-  font-size: 40px;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -60,5 +60,4 @@ a:visited {
   text-align: center;
   cursor: pointer;
   padding: 10px;
-  margin: 40px 20px;
 }
