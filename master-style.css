@@ -1,0 +1,147 @@
+/* Master CSS file */
+/* This is a reference list of all of the CSS elements used throughout the website. Use for consistency. Update as needed. 
+
+/* To prevent duplication, use a new commit each time you upload a new page. */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2.25rem;
+  width: 90%;
+  color: rgb(28, 28, 30);
+  background-color: rgb(242, 242, 247);
+}
+
+h1 {
+  color: rgb(28, 28, 30);
+  line-height: 48px;
+  font-size: 60px;
+}
+
+h2 {
+  color: rgb(44, 44, 46);
+  line-height: 36px;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  color: rgb(44, 44, 46);
+  line-height: 16px;
+}
+
+.contactTable {
+  width: 10px;
+  color: rgb(28, 28, 30);
+  /* To collapse borders so each cell's border runs directly into the next: */
+  /* border-collapse: collapse; */
+}
+
+/* Table rows: */
+td {
+  /* border-bottom: .5px solid rgb(155, 155, 155); */
+}
+
+/* ----- */
+/* Top nav */
+.nav {
+  font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(90, 200, 250);
+}
+
+/* visited links */
+a:visited {
+  color: gray;
+}
+
+/* View My Work button */
+.button {
+  display: block;
+  background: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* MY WORK */
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 40px;
+  width: 80%;
+  color: rgb(28, 28, 30);
+  background: rgb(242, 242, 247);
+}
+
+h1 {
+  color: rgb(28, 28, 30);
+  line-height: 48px;
+  font-size: 60px;
+}
+
+h2 {
+  color: rgb(44, 44, 46);
+  line-height: 36px;
+  margin: 0;
+}
+
+h3 {
+  color: rgb(44, 44, 46);
+  line-height: 16px;
+}
+
+.contactTable {
+  width: 10px;
+  color: rgb(28, 28, 30);
+  /* To collapse borders so each cell's border runs directly into the next: */
+  /* border-collapse: collapse; */
+}
+
+/* Table rows: */
+td {
+  /* border-bottom: .5px solid rgb(155, 155, 155); */
+}
+
+.nav {
+  font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(90, 200, 250);
+}
+
+/* visited links */
+a:visited {
+  color: gray;
+}
+
+.contentBlock {
+  background: rgb(250, 252, 255);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.date {
+  
+}
+
+.centerButton {
+  /* Centers an image, button, etc.: */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  /* Styles button: */
+  background: rgb(44, 44, 46);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: rgb(250, 252, 255);
+}
