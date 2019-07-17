@@ -9,7 +9,8 @@
 
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2.25rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   color: rgb(28, 28, 30);
   background-color: rgb(242, 242, 247);
@@ -51,26 +52,27 @@ td {
   font-weight: bold;
 }
 
-/* mouse over link */
-a:hover {
-  color: rgb(90, 200, 250);
+/* Links */
+a:link {
+  color: rgb(0, 122, 255);
 }
 
 /* visited links */
 a:visited {
-  color: gray;
+  color: rgb(0, 122, 255);
 }
 
 /* View My Work button */
 .button {
   display: block;
   background: white;
-  border: none;
+  border: 1px solid rgb(242, 242, 247);
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
   padding: 10px;
+  border-radius: 5px;
 }
 
 
@@ -92,15 +94,14 @@ a:visited {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
   /* Styles button: */
-  background: rgb(44, 44, 46);
-  border-radius: 5px;
-  border: none;
+  display: block;
+  background: rgb(242, 242, 247);
+  border: .1rem solid #d2d2e4;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
   padding: 10px;
-  color: rgb(250, 252, 255);
+  border-radius: 5px;
 }

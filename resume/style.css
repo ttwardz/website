@@ -59,7 +59,7 @@ a:visited {
   width: auto;
   /* Styles button: */
   background: rgb(250, 252, 255);
-  border: none;
+  border: .1rem solid #d2d2e4;
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
