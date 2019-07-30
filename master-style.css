@@ -18,7 +18,7 @@ body {
 
 h1 {
   color: rgb(28, 28, 30);
-  line-height: 48px;
+  line-height: 28px;
   font-size: 60px;
 }
 
@@ -48,18 +48,23 @@ td {
 
 /* ----- */
 /* Top nav */
-.nav {
+.topnav {
   font-weight: bold;
+  background-color: #353538;
+  padding: 0.5rem;
+  overflow: hidden;
 }
 
-/* Links */
-a:link {
-  color: rgb(0, 122, 255);
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  
 }
 
-/* visited links */
-a:visited {
-  color: rgb(0, 122, 255);
+/* active link */
+.topnav a.active {
+  color: rgb(242, 242, 247);
 }
 
 /* View My Work button */
