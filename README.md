@@ -5,7 +5,7 @@
 ## 5 Sections
 1. Home
 2. My Work
-3. Resume
+3. About
 4. Blog
 5. Contact
 
