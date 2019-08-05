@@ -11,7 +11,7 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 95%;
   color: rgb(28, 28, 30);
   background-color: rgb(242, 242, 247);
 }
@@ -50,21 +50,29 @@ td {
 /* Top nav */
 .topnav {
   font-weight: bold;
-  background-color: #353538;
+  background-color: white;
   padding: 0.5rem;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: rgb(28, 28, 30);
+  padding-right: 10px;
   text-align: center;
   
 }
 
+/* hover over link */
+.topnav a:hover {
+  background-color: rgb(220, 220, 225);
+}
+
 /* active link */
-.topnav a.active {
-  color: rgb(242, 242, 247);
+.topnav a:active {
+	background-color: rgb(28, 28, 30);
+	color: rgb(242, 242, 247);
 }
 
 /* View My Work button */
