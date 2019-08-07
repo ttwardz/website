@@ -18,7 +18,7 @@ body {
 
 h1 {
   color: rgb(28, 28, 30);
-  line-height: 28px;
+  line-height: .5rem;
   font-size: 60px;
 }
 
@@ -58,7 +58,7 @@ td {
 
 .topnav a {
   float: left;
-  color: rgb(28, 28, 30);
+  color: rgb(14, 14, 15);
   padding-right: 10px;
   text-align: center;
   
