@@ -47,7 +47,46 @@ td {
 }
 
 /* ----- */
-/* Top nav */
+/* Top nav by <ul> and list items */
+ul {
+	/* Fixes the nav bar at the top when scrolling: */
+		/* position: fixed; */
+		/* top: 10px; */
+		/* width: 100%; */
+	
+	/* Removes bullets: */
+	list-style-type: none; 
+	/* Removes default browser settings: */
+	margin:0;
+	padding:0;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: rgb(14, 14, 15);
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	padding:10px 10px;
+}
+
+li a:hover {
+	background-color:rgb(14,14,15);
+}
+
+.active {
+	color: white;
+	background-color: rgb(56,56,60);
+}
+
+/* Top nav by <div> class */
 .topnav {
   font-weight: bold;
   background-color: white;
@@ -58,6 +97,7 @@ td {
 
 .topnav a {
   float: left;
+  display: block;
   color: rgb(14, 14, 15);
   padding-right: 10px;
   text-align: center;
@@ -66,7 +106,7 @@ td {
 
 /* hover over link */
 .topnav a:hover {
-  background-color: rgb(220, 220, 225);
+  color: rgb(220, 220, 225);
 }
 
 /* active link */
