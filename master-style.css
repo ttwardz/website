@@ -40,6 +40,10 @@ h2 {
   margin: 0;
 }
 
+.centerHead {
+	text-align:centered;
+}
+
 h3 {
   color: rgb(44, 44, 46);
   line-height: 16px;
@@ -95,24 +99,6 @@ li a:hover {
 .active {
 	color: white;
 	background-color: rgb(56,56,60);
-}
-
-/* Top nav by <div> class */
-.topnav {
-  font-weight: bold;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: rgb(14, 14, 15);
-  padding-right: 10px;
-  text-align: center;
-  
 }
 
 /* hover over link */
