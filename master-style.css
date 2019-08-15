@@ -49,20 +49,18 @@ h3 {
   line-height: 16px;
 }
 
-.contactTable {
-  width: 10px;
-  color: rgb(28, 28, 30);
-  /* To collapse borders so each cell's border runs directly into the next: */
-  /* border-collapse: collapse; */
+.grayBodyText {
+	color:rgb(140,140,150);
+	font-weight:bold;
 }
 
-/* Table rows: */
-td {
-  /* border-bottom: .5px solid rgb(155, 155, 155); */
-}
+
 
 /* ----- */
 /* Top nav by <ul> and list items */
+
+
+
 ul {
 	/* Fixes the nav bar at the top when scrolling: */
 		/* position: fixed; */
@@ -92,24 +90,13 @@ li a {
 	padding:10px 10px;
 }
 
-li a:hover {
-	background-color:rgb(14,14,15);
+li a.hover {
+	background-color:rgb(242,242,247)
 }
 
-.active {
+li a.active {
 	color: white;
-	background-color: rgb(56,56,60);
-}
-
-/* hover over link */
-.topnav a:hover {
-  color: rgb(220, 220, 225);
-}
-
-/* active link */
-.topnav a:active {
-	background-color: rgb(28, 28, 30);
-	color: rgb(242, 242, 247);
+	background-color:rgb(56,56,60);
 }
 
 /* View My Work button */
@@ -130,17 +117,24 @@ li a:hover {
 }
 
 
+/* */
 /* MY WORK */
+/* */
 
-
+/* <div class:"contentBlock"> */
 .contentBlock {
   background: rgb(250, 252, 255);
   padding: 16px;
   border-radius: 10px;
 }
 
-.date {
+.contentBlock>h2, #date {
+  	text-align: center;
+  }
   
+/* <div id:"contentBlock"> */
+#date {
+ 		color:rgb(140,140,150);
 }
 
 .centerButton {
@@ -158,4 +152,21 @@ li a:hover {
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+}
+
+
+/* */
+/* ABOUT */
+/* */
+
+
+/* Past Positions table */
+#workTable {
+	line-height:1.5rem;
+	font-weight:bold;
+}
+
+#workTable>h2 {
+	line-height:2.5rem;
+	text-align:left;
 }
