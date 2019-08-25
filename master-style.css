@@ -49,7 +49,8 @@ h3 {
   line-height: 16px;
 }
 
-.grayBodyText {
+/* In-¶ gray-bold text ++ 'My Experience' table */
+.grayBodyText, tr td:last-child {
 	color:rgb(140,140,150);
 	font-weight:bold;
 }
@@ -177,13 +178,20 @@ li a.active {
 /* */
 
 
-/* Past Positions table */
-#workTable {
+/* 'My Experience' table */
+#xpTable {
 	line-height:1.5rem;
-	font-weight:bold;
+	font-weight: bold;
 }
 
-#workTable>h2 {
+#xpTable>h2 {
 	line-height:2.5rem;
 	text-align:left;
 }
+
+#xpTable td:first-child {
+	width: 9rem;
+}
+
+#xpTable>tr td:last-child {font-weight:normal;}
+/* xpTable inherits .grayBodyText for tr td:last-child (above) */
