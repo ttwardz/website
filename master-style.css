@@ -15,7 +15,13 @@ body {
 }
 
 /* Adjusts elements based on screen size */
-@media screen and (min-width:400px) {
+@media screen and (min-width:800px) {
+	body {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width:799px) {
 	body {
 		width: 80%;
 	}
@@ -82,22 +88,29 @@ li {
 	float: left;
 }
 
+/* Nav Bar links */
 li a {
 	display: block;
 	color: rgb(14, 14, 15);
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
-	padding:10px 10px;
+	padding:10px 15px;
 }
 
-li a.hover {
+li a:hover {
 	background-color:rgb(242,242,247)
 }
 
 li a.active {
 	color: white;
 	background-color:rgb(56,56,60);
+}
+
+/* Contact button */
+li:last-child {
+	float: right;
+	/* background: rgb(50,150,255); */
 }
 
 /* View My Work button */
@@ -107,7 +120,7 @@ li a.active {
   border: 1px solid rgb(242, 242, 247);
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
+ 
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
@@ -116,7 +129,6 @@ li a.active {
 .button a:centered {
 	text-align:center;
 }
-
 
 /* */
 /* MY WORK */
