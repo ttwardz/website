@@ -14,22 +14,43 @@ body {
   background-color: rgb(242, 242, 247);
 }
 
+footer {
+	padding: 20% 0%;
+	line-height: 1;
+	color:rgb(108,108,120);
+}
+
 /* Adjusts elements based on screen size */
+/* Large devices */
 @media screen and (min-width:800px) {
 	body {
 		width: 60%;
 	}
 }
 
+/* Medium devices */
 @media screen and (max-width:799px) {
 	body {
 		width: 80%;
 	}
 }
 
+/* Small devices */
 @media screen and (max-width:399px) {
 	body {
 		width:90%;	
+	}
+	
+	td {
+		vertical-align: top;
+	}
+	
+	#workTable-desktop {
+		display: none;
+	}
+	
+	#workList-mobile {
+		display: block;
 	}
 }
 
@@ -55,9 +76,14 @@ h3 {
   line-height: 16px;
 }
 
-/* In-¶ gray-bold text ++ 'My Experience' table */
-.grayBodyText, tr td:last-child {
+/* In-¶ gray-bold text ++ 'My Experience' table ++ 'My Work' table (desktop) */
+.grayBodyText, 
+#xpTable td:nth-child(2), 
+#workTable-desktop td:nth-child(2) {
 	color:rgb(140,140,150);
+}
+
+.grayBodyText {
 	font-weight:bold;
 }
 
@@ -126,6 +152,11 @@ li:last-child {
   border-radius: 5px;
 }
 
+.button a {
+	text-decoration: none;
+	color: rgb(14,14,15);
+}
+
 .button a:centered {
 	text-align:center;
 }
@@ -135,7 +166,7 @@ li:last-child {
 /* */
 
 /* <div class:"contentBlock"> */
-.contentBlock {
+.contentBlock, #workTable-desktop, #workList-mobile {
   background: rgb(250, 252, 255);
   padding: 16px;
   border-radius: 10px;
@@ -150,7 +181,7 @@ li:last-child {
  		color:rgb(140,140,150);
 }
 
-.centerButton {
+.centerButton, .centerButtonWhite {
   /* Centers an image, button, etc.: */
   display: block;
   margin-left: auto;
@@ -168,12 +199,7 @@ li:last-child {
 }
 
 .centerButtonWhite {
-  /* Centers an image, button, etc.: */
-  margin-left: auto;
-  margin-right: auto;
-  /* Styles button: */
-  display: block;
-  background-color: white;
+  background: white;
   border: .1rem solid white;
   font-size: 16px;
   font-weight: bold;
@@ -181,6 +207,41 @@ li:last-child {
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+}
+
+/* 'My Work' table */
+#workTable-desktop {
+	line-height:1.5rem;
+}
+
+#workTable-desktop h2 {
+	line-height:2.5rem;
+	text-align:left;
+}
+
+#workTable-desktop td {
+	vertical-align: top;
+}
+
+#workTable-desktop td:first-child {
+	font-weight: bold;
+	width: 9rem;
+}
+
+#workTable-desktop td:nth-child(2) {
+	font-weight: normal;
+}
+/* xpTable inherits .grayBodyText for tr td:last-child (above) */
+
+/* 'My Work' table - MOBILE */
+#workList-mobile li:first-child {
+	font-weight: bold;
+}
+
+#workList-mobile button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
