@@ -1,0 +1,285 @@
+/* Master CSS file */
+/* This is a reference list of all of the CSS elements used throughout the website. Use for consistency. Update as needed. 
+
+/* To prevent duplication, use a new commit each time you upload a new page. */
+
+
+/* Home */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(242, 242, 247);
+  background-color: rgb(28,28,30);
+}
+
+footer {
+	padding: 20% 0%;
+	line-height: 12px;
+	color: rgb(168,168,180);
+}
+
+/* Adjusts elements based on screen size */
+/* Large devices */
+@media screen and (min-width:800px) {
+	body {
+		width: 60%;
+	}
+	
+	#workTable-desktop {
+		display: block;
+	}
+	
+	#workList-mobile {
+		display: none;
+	}
+}
+
+/* Medium devices */
+@media screen and (max-width:799px) {
+	body {
+		width: 80%;
+	}
+	
+	#workTable-desktop {
+		display: block;
+	}
+	
+	#workList-mobile {
+		display: none;
+	}
+}
+
+/* Small devices */
+@media screen and (max-width:399px) {
+	body {
+		width:90%;	
+	}
+	
+	td {
+		vertical-align: top;
+	}
+	
+	#workTable-desktop {
+		display: none;
+	}
+	
+	#workList-mobile {
+		display: block;
+	}
+}
+
+h1 {
+  color: rgb(242,242,247);
+  line-height: .5rem;
+  font-size: 60px;
+}
+
+h2 {
+  color: rgb(222,222,227);
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.centerHead {
+	text-align:centered;
+}
+
+h3 {
+  color: rgb(222,222,227);
+  line-height: 16px;
+}
+
+/* In-¶ gray-bold text ++ 'My Experience' table ++ 'My Work' table (desktop) */
+.grayBodyText, 
+#xpTable td:nth-child(2), 
+#workTable-desktop td:nth-child(2) {
+	color:rgb(140,140,150);
+}
+
+.grayBodyText {
+	font-weight:bold;
+}
+
+
+
+/* ----- */
+/* Top nav by <ul> and list items */
+
+
+
+ul {
+	/* Fixes the nav bar at the top when scrolling: */
+		/* position: fixed; */
+		/* top: 10px; */
+		/* width: 100%; */
+	
+	/* Removes bullets: */
+	list-style-type: none; 
+	/* Removes default browser settings: */
+	margin:0;
+	padding:0;
+	background-color: black;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+/* Nav Bar links */
+li a {
+	display: block;
+	color: rgb(242,242,247);
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	padding:10px 15px;
+}
+
+li a:hover {
+	background-color:rgb(112,112,118)
+}
+
+li a.active {
+	color: white;
+	background-color:rgb(28,28,30);
+}
+
+/* Contact button */
+li:last-child {
+	float: right;
+}
+
+/* View My Work button */
+.button {
+  display: block;
+  background: black;
+  border: 1px solid rgb(255,150,50);
+  font-size: 16px;
+  font-weight: bold;
+ 
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button a {
+	text-decoration: none;
+	color: rgb(242,242,247);
+}
+
+.button a:centered {
+	text-align:center;
+}
+
+/* */
+/* MY WORK */
+/* */
+
+/* <div class:"contentBlock"> */
+.contentBlock, #workTable-desktop, #workList-mobile {
+  background: rgb(250, 252, 255);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.contentBlock>h2, #date {
+  	text-align: center;
+  }
+  
+/* <div id:"contentBlock"> */
+#date {
+ 		color:rgb(140,140,150);
+}
+
+.centerButton, .centerButtonWhite {
+  /* Centers an image, button, etc.: */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Styles button: */
+  display: block;
+  background: rgb(242, 242, 247);
+  border: .1rem solid #d2d2e4;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.centerButtonWhite {
+  background: white;
+  border: .1rem solid white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 'My Work' table */
+#workTable-desktop {
+	line-height:1.5rem;
+}
+
+#workTable-desktop h2 {
+	line-height:2.5rem;
+	text-align:left;
+}
+
+#workTable-desktop td {
+	vertical-align: top;
+}
+
+#workTable-desktop td:first-child {
+	font-weight: bold;
+	width: 9rem;
+}
+
+#workTable-desktop td:nth-child(2) {
+	font-weight: normal;
+}
+/* xpTable inherits .grayBodyText for tr td:last-child (above) */
+
+/* 'My Work' table - MOBILE */
+#workList-mobile li:first-child {
+	font-weight: bold;
+}
+
+#workList-mobile button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* */
+/* ABOUT */
+/* */
+
+
+/* 'My Experience' table */
+#xpTable {
+	line-height:1.5rem;
+	font-weight: bold;
+}
+
+#xpTable>h2 {
+	line-height:2.5rem;
+	text-align:left;
+}
+
+#xpTable td:first-child {
+	width: 9rem;
+}
+
+#xpTable>tr td:last-child {font-weight:normal;}
+/* xpTable inherits .grayBodyText for tr td:last-child (above) */
