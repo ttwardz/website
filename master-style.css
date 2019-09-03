@@ -26,12 +26,28 @@ footer {
 	body {
 		width: 60%;
 	}
+	
+	#workTable-desktop {
+		display: block;
+	}
+	
+	#workList-mobile {
+		display: none;
+	}
 }
 
 /* Medium devices */
 @media screen and (max-width:799px) {
 	body {
 		width: 80%;
+	}
+	
+	#workTable-desktop {
+		display: block;
+	}
+	
+	#workList-mobile {
+		display: none;
 	}
 }
 
