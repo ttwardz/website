@@ -20,6 +20,13 @@ footer {
 	color: rgb(168,168,180);
 }
 
+#logo {
+	display: block;
+	height: 90px;
+	width: 90px;
+	padding: 0px 0px 10px 0px;
+}
+
 /* Adjusts elements based on screen size */
 /* Large devices */
 @media screen and (min-width:800px) {
@@ -27,11 +34,11 @@ footer {
 		width: 60%;
 	}
 	
-	#workTable-desktop {
+	#workTable-desktop, #contentTable-desktop {
 		display: block;
 	}
 	
-	#workList-mobile {
+	#workList-mobile, #contentList-mobile {
 		display: none;
 	}
 }
@@ -42,11 +49,11 @@ footer {
 		width: 80%;
 	}
 	
-	#workTable-desktop {
+	#workTable-desktop, #contentTable-desktop {
 		display: block;
 	}
 	
-	#workList-mobile {
+	#workList-mobile, #contentList-mobile {
 		display: none;
 	}
 }
@@ -61,11 +68,11 @@ footer {
 		vertical-align: top;
 	}
 	
-	#workTable-desktop {
+	#workTable-desktop, #contentTable-desktop {
 		display: none;
 	}
 	
-	#workList-mobile {
+	#workList-mobile, #contentList-mobile {
 		display: block;
 	}
 }
@@ -95,7 +102,8 @@ h3 {
 /* In-¶ gray-bold text ++ 'My Experience' table ++ 'My Work' table (desktop) */
 .grayBodyText, 
 #xpTable td:nth-child(2), 
-#workTable-desktop td:nth-child(2) {
+#workTable-desktop td:nth-child(2),
+#contentTable-desktop td:nth-child(2) {
 	color:rgb(140,140,150);
 }
 
@@ -108,8 +116,6 @@ h3 {
 /* ----- */
 /* Top nav by <ul> and list items */
 
-
-
 ul {
 	/* Fixes the nav bar at the top when scrolling: */
 		/* position: fixed; */
@@ -121,12 +127,16 @@ ul {
 	/* Removes default browser settings: */
 	margin:0;
 	padding:0;
-	background-color: white;
+	background-color: #fafcff;
 	border-radius: 5px;
 	overflow: hidden;
 }
 
 li {
+	
+}
+
+.navBar li {
 	float: left;
 }
 
@@ -150,7 +160,7 @@ li a.active {
 }
 
 /* Contact button */
-li:last-child {
+.navBar li:last-child {
 	float: right;
 	/* background: rgb(50,150,255); */
 }
@@ -181,9 +191,12 @@ li:last-child {
 /* MY WORK */
 /* */
 
-/* <div class:"contentBlock"> */
-.contentBlock, #workTable-desktop, #workList-mobile {
-  background: rgb(250, 252, 255);
+.contentBlock, 
+#workTable-desktop, 
+#workList-mobile, 
+#contentTable-desktop,
+#contentList-mobile {
+  background: #fafcff;
   padding: 16px;
   border-radius: 10px;
 }
@@ -225,32 +238,55 @@ li:last-child {
   border-radius: 5px;
 }
 
-/* 'My Work' table */
+/* 'My Work' - DESKTOP */
 #workTable-desktop {
 	line-height:1.5rem;
 }
 
-#workTable-desktop h2 {
-	line-height:2.5rem;
+#contentTable-desktop {
+	line-height:1.25rem;
+}
+
+#workTable-desktop h2, 
+#contentTable-desktop h2 {
+	line-height:3rem;
 	text-align:left;
 }
 
 #workTable-desktop td {
 	vertical-align: top;
+	padding: 1px 1px 16px 1px;
 }
 
-#workTable-desktop td:first-child {
+#contentTable-desktop td {
+	vertical-align: top;
+	padding: 1px;
+}
+
+#workTable-desktop td:first-child, 
+#contentTable-desktop td:first-child {
 	font-weight: bold;
-	width: 9rem;
+	width: 10rem;
 }
 
-#workTable-desktop td:nth-child(2) {
+#workTable-desktop td:nth-child(2), 
+#contentTable-desktop td:nth-child(2) {
 	font-weight: normal;
 }
-/* xpTable inherits .grayBodyText for tr td:last-child (above) */
 
-/* 'My Work' table - MOBILE */
-#workList-mobile li:first-child {
+#workTable-desktop a {
+	text-decoration: none;
+	color: #1c1c1e;
+}
+
+
+/* 'My Work' - MOBILE */
+#contentList-mobile ul {
+	padding: 10px 0px 0px 0px;
+}
+
+#workList-mobile li:first-child,
+#contentList-mobile li:first-child {
 	font-weight: bold;
 }
 
@@ -260,6 +296,19 @@ li:last-child {
 	margin-right: auto;
 }
 
+#workList-mobile a,
+#contentList-mobile a {
+	text-align: left;
+}
+
+#contentList-mobile li:first-child {
+	padding: 0px 0px 0px 0px;
+}
+
+
+#contentList-mobile li {
+	padding: 0px 0px 0px 10px;
+}
 
 
 /* */
