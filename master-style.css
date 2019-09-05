@@ -17,7 +17,11 @@ body {
 footer {
 	padding: 20% 0%;
 	line-height: 12px;
-	color: rgb(168,168,180);
+	color: #a8a8b4;
+}
+
+footer a {
+	color: #a8a8b4
 }
 
 #logo {
@@ -167,15 +171,14 @@ li a.active {
 
 /* View My Work button */
 .button {
-  display: block;
   background: white;
   border: 1px solid rgb(242, 242, 247);
   font-size: 16px;
   font-weight: bold;
- 
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
+  display: block;
 }
 
 .button a {
