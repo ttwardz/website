@@ -63,7 +63,7 @@ footer a {
 }
 
 /* Small devices */
-@media screen and (max-width:399px) {
+@media screen and (max-width:499px) {
 	body {
 		width:90%;	
 	}
@@ -113,6 +113,11 @@ h3 {
 
 .grayBodyText {
 	font-weight:bold;
+}
+
+.highlightText {
+    font-weight: bold;
+    color: #ff9500;
 }
 
 
