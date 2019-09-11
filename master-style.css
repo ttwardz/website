@@ -171,7 +171,6 @@ li a.active {
 /* Contact button */
 .navBar li:last-child {
 	float: right;
-	/* background: rgb(50,150,255); */
 }
 
 /* View My Work button */
@@ -209,14 +208,13 @@ li a.active {
   border-radius: 10px;
 }
 
-.contentBlock>h2, #date {
+.contentBlock h1 {
+	
+}
+
+.contentBlock h2 {
   	text-align: center;
   }
-  
-/* <div id:"contentBlock"> */
-#date {
- 		color:rgb(140,140,150);
-}
 
 .centerButton, .centerButtonWhite {
   /* Centers an image, button, etc.: */
@@ -340,3 +338,31 @@ li a.active {
 
 #xpTable>tr td:last-child {font-weight:normal;}
 /* xpTable inherits .grayBodyText for tr td:last-child (above) */
+
+
+/* */
+/* BLOG */
+/* */
+
+.blogPost a {
+	text-decoration: none;
+	color: #1c1c1e;
+}
+
+.blogPost h2 {
+	text-align: left;
+}
+
+.blogPost h3 {
+	font-weight: normal;
+	font-size: 1rem;
+	color: #a8a8b4;
+}
+
+.blogPost p {
+	color: 1c1c1e;
+}
+
+.date {
+	color: 6c6c78;
+}
