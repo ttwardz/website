@@ -349,6 +349,10 @@ li a.active {
 	color: #1c1c1e;
 }
 
+.contentBlock h1 {
+	line-spacing: 1;
+}
+
 .blogPost h2 {
 	text-align: left;
 }
