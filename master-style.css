@@ -1,7 +1,5 @@
 /* Master CSS file */
-/* This is a reference list of all of the CSS elements used throughout the website. Use for consistency. Update as needed. 
-
-/* To prevent duplication, use a new commit each time you upload a new page. */
+/* This is a reference list of all of the CSS elements used throughout the website. Use for consistency. Update as needed. */
 
 
 /* Home */
@@ -15,7 +13,7 @@ body {
 }
 
 footer {
-	padding: 20% 0%;
+	padding: 10% 0%;
 	line-height: 12px;
 	color: #a8a8b4;
 }

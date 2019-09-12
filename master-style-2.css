@@ -15,7 +15,7 @@ body {
 }
 
 footer {
-	padding: 20% 0%;
+	padding: 10% 0%;
 	line-height: 12px;
 	color: #a8a8b4;
 }
@@ -106,7 +106,7 @@ h3 {
 /* In-¶ gray-bold text ++ 'My Experience' table ++ 'My Work' table (desktop) */
 .grayBodyText, 
 #xpTable td:nth-child(2), 
-#desktop td:nth-child(2), {
+.contentBlock td:nth-child(2), {
 	color:rgb(140,140,150);
 }
 
@@ -240,25 +240,21 @@ li a.active {
 }
 
 /* 'My Work' - DESKTOP */
-#desktop table {
+.contentBlock table {
 	line-height:1.5rem;
 }
 
-#desktop td {
-	vertical-align: top;
-	padding: 1px 1px 16px 1px;
-}
-
-#desktop td:first-child {
+.contentBlock td:first-child {
 	font-weight: bold;
 	width: 10rem;
+	vertical-align: top;
 }
 
-#desktop td:nth-child(2) {
+.contentBlock td:nth-child(2) {
 	color: rgb(108,108,120);
 }
 
-#desktop a {
+.contentBlock a {
 	color: #1c1c1e;
 }
 
