@@ -38,7 +38,7 @@ footer a {
 		width: 60%;
 	}
 	
-	#workTable-desktop, #contentTable-desktop {
+	#desktop {
 		display: block;
 	}
 	
@@ -53,7 +53,7 @@ footer a {
 		width: 80%;
 	}
 	
-	#workTable-desktop, #contentTable-desktop {
+	#desktop {
 		display: block;
 	}
 	
@@ -72,7 +72,7 @@ footer a {
 		vertical-align: top;
 	}
 	
-	#workTable-desktop, #contentTable-desktop {
+	#desktop {
 		display: none;
 	}
 	
@@ -106,8 +106,7 @@ h3 {
 /* In-¶ gray-bold text ++ 'My Experience' table ++ 'My Work' table (desktop) */
 .grayBodyText, 
 #xpTable td:nth-child(2), 
-#workTable-desktop td:nth-child(2),
-#contentTable-desktop td:nth-child(2) {
+#desktop td:nth-child(2), {
 	color:rgb(140,140,150);
 }
 
@@ -200,9 +199,7 @@ li a.active {
 /* */
 
 .contentBlock, 
-#workTable-desktop, 
 #workList-mobile, 
-#contentTable-desktop,
 #contentList-mobile {
   background: #fafcff;
   padding: 16px;
@@ -211,12 +208,8 @@ li a.active {
 
 #date {
   	text-align: center;
+  	color:rgb(140,140,150);
   }
-  
-/* <div id:"contentBlock"> */
-#date {
- 		color:rgb(140,140,150);
-}
 
 .centerButton, .centerButtonWhite {
   /* Centers an image, button, etc.: */
@@ -247,42 +240,25 @@ li a.active {
 }
 
 /* 'My Work' - DESKTOP */
-#workTable-desktop {
+#desktop table {
 	line-height:1.5rem;
 }
 
-#contentTable-desktop {
-	line-height:1.25rem;
-}
-
-#workTable-desktop h2, 
-#contentTable-desktop h2 {
-	line-height:3rem;
-	text-align:left;
-}
-
-#workTable-desktop td {
+#desktop td {
 	vertical-align: top;
 	padding: 1px 1px 16px 1px;
 }
 
-#contentTable-desktop td {
-	vertical-align: top;
-	padding: 1px;
-}
-
-#workTable-desktop td:first-child, 
-#contentTable-desktop td:first-child {
+#desktop td:first-child {
 	font-weight: bold;
 	width: 10rem;
 }
 
-#workTable-desktop td:nth-child(2), 
-#contentTable-desktop td:nth-child(2) {
-	font-weight: normal;
+#desktop td:nth-child(2) {
+	color: rgb(108,108,120);
 }
 
-#workTable-desktop a {
+#desktop a {
 	color: #1c1c1e;
 }
 
