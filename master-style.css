@@ -1,7 +1,5 @@
 /* Master CSS file */
-/* This is a reference list of all of the CSS elements used throughout the website. Use for consistency. Update as needed. 
-
-/* To prevent duplication, use a new commit each time you upload a new page. */
+/* This is a master list of all of the CSS elements used throughout the website.
 
 
 /* Home */
@@ -140,16 +138,12 @@ ul {
 	overflow: hidden;
 }
 
-li {
-	
-}
-
 .navBar li {
 	float: left;
 }
 
 /* Nav Bar links */
-li a {
+.navBar li a {
 	display: block;
 	color: rgb(14, 14, 15);
 	font-weight: bold;
@@ -170,7 +164,6 @@ li a.active {
 /* Contact button */
 .navBar li:last-child {
 	float: right;
-	/* background: rgb(50,150,255); */
 }
 
 /* View My Work button */
@@ -206,7 +199,6 @@ li a.active {
   border-radius: 10px;
 }
 
-#date {
   	text-align: center;
   	color:rgb(140,140,150);
   }
@@ -310,7 +302,28 @@ li a.active {
 	width: 9rem;
 }
 
-#xpTable>tr td:last-child {
-/* xpTable inherits .grayBodyText for tr td:last-child (above) */	font-weight:normal;
+/* */
+/* BLOG */
+/* */
+
+.contentBlock h1 {
+	line-spacing: 1;
 }
 
+.blogPost h2 {
+	text-align: left;
+}
+
+.blogPost h3 {
+	font-weight: normal;
+	font-size: 1rem;
+	color: #a8a8b4;
+}
+
+.blogPost p {
+	color: 1c1c1e;
+}
+
+.date {
+	color: 6c6c78;
+}
