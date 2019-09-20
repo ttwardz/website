@@ -1,7 +1,7 @@
 /* Responsive to screen size */
 /* Large screens */
 @media screen and (min-width:800px) {
-	main {width: 60%;}
+	main {width: 70%;}
 }
 
 /* Medium screens */
@@ -12,6 +12,7 @@
 /* Small screens */
 @media screen and (max-width:499px) {
 	main {width: 90%;}
+	.navBar button {display: none;}
 }
 
 /* The main content area within the body of the page */
@@ -23,14 +24,20 @@ main {
 	background: white;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 0px 0px 10px 10px;
-	padding: 1rem;
+	border-radius: 10px;
+	padding: 2rem;
 }
 
 body {
 	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
 	background: #f2f2f7;
 	color: #1c1c1e;
+}
+
+footer, footer a {
+	padding: 8% 0% 0% 0%;
+	line-height: 12px;
+	color: #a8a8b4;
 }
 
 p {
@@ -53,35 +60,64 @@ h3 {
 	font-size: 1rem;
 }
 
+.grayText {
+	color: #a8a8b4;
+}
+
+.highlightText {
+	
+}
+
 
 
 /* Nav Bar */
-nav {
-	width: 80%;
-}
-
-nav ul {
+.navBar ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background: white;
-	border-radius: 5px;
 }
 
-nav li {
+.navBar li {
 	float: left;
 }
 
-nav a {
+.navBar button {
+	float: right;
+	padding: 0px;
+}
+
+.navBar a {
 	display: block;
-	color: #0e0e0f;
+	border-radius: 5px;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
+	padding: 10px 15px;
+}
+
+.navBar a.active {
+	background: #1c1c1e;
+	color: white;
+}
+
+
+
+/* Buttons */
+button {
+	display: block;
+	background: #ff9500;
+	border: 1px solid #ff9500;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button {
 	padding: 10px;
 }
 
-nav a.active {
-	background: #1c1c1e;
+button a {
 	color: white;
+	text-decoration: none;
 }
