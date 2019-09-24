@@ -2,28 +2,28 @@
 /* Large screens */
 @media screen and (min-width:800px) {
 	main {width: 70%;padding:1.5rem 3rem}
-	h1 {font-size: 3rem}
 	.desktop {display: block;}
 	.mobile {display: none;}
+	.blogPost h1 {font-size: 3rem}
 	.blogPost h2 {font-size: 2rem;}
 }
 
 /* Medium screens */
 @media screen and (max-width:799px) {
 	main {width: 80%;padding:1rem 2rem}
-	h1 {font-size: 3rem}
 	.desktop {display: block;}
 	.mobile {display: none;}
+	.blogPost h1 {font-size: 3rem}
 	.blogPost h2 {font-size: 2rem;}
 }
 
 /* Small screens */
 @media screen and (max-width:499px) {
 	main {width: 90%;padding: 1rem;}
-	h1 {font-size: 2rem}
 	.navBar button {display: none;}
 	.desktop {display: none;}
 	.mobile {display: block;}
+	.blogPost h1 {font-size: 2rem}
 	.blogPost h2 {font-size: 1.5rem;}
 }
 
@@ -64,7 +64,7 @@ a {
 }
 
 h1 {
-	
+	font-size: 3rem;
 }
 
 h2 {
@@ -77,12 +77,16 @@ h3 {
 
 .grayText,
 td:nth-child(2) {
-	color: #9898a4;
+	color: #888894;
 }
 
 .highlightText,
 .blogPost p a {
 	color: #ff9500;
+}
+
+.highlightText {
+	font-weight: bold;
 }
 
 
