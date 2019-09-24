@@ -2,23 +2,29 @@
 /* Large screens */
 @media screen and (min-width:800px) {
 	main {width: 70%;padding:1.5rem 3rem}
+	h1 {font-size: 3rem}
 	.desktop {display: block;}
 	.mobile {display: none;}
+	.blogPost h2 {font-size: 2rem;}
 }
 
 /* Medium screens */
 @media screen and (max-width:799px) {
 	main {width: 80%;padding:1rem 2rem}
+	h1 {font-size: 3rem}
 	.desktop {display: block;}
 	.mobile {display: none;}
+	.blogPost h2 {font-size: 2rem;}
 }
 
 /* Small screens */
 @media screen and (max-width:499px) {
 	main {width: 90%;padding: 1rem;}
+	h1 {font-size: 2rem}
 	.navBar button {display: none;}
 	.desktop {display: none;}
 	.mobile {display: block;}
+	.blogPost h2 {font-size: 1.5rem;}
 }
 
 
@@ -44,7 +50,7 @@ body {
 
 footer, footer a {
 	padding: 8% 0% 0% 0%;
-	line-height: 12px;
+	line-height: 1rem;
 	color: #a8a8b4;
 	text-align: right;
 }
@@ -58,11 +64,11 @@ a {
 }
 
 h1 {
-	font-size: 3rem;
+	
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 h3 {
@@ -74,7 +80,8 @@ td:nth-child(2) {
 	color: #9898a4;
 }
 
-.highlightText {
+.highlightText,
+.blogPost p a {
 	color: #ff9500;
 }
 
@@ -137,6 +144,11 @@ td:nth-child(2) {
 	text-align: right;
 }
 
+#xp td:first-child {
+	font-weight: bold;
+	width: 10rem;
+}
+
 
 
 /* Lists */
@@ -193,4 +205,12 @@ button a {
 #writing button {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+
+/* Images */
+img {
+	display: block;
+	width: 100%;
 }
