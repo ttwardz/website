@@ -21,7 +21,10 @@
 	.mobile {display: block;}
 }
 
+
+
 /* The main content area within the body of the page */
+
 header {
 	
 }
@@ -41,8 +44,9 @@ body {
 
 footer, footer a {
 	padding: 8% 0% 0% 0%;
-	line-height: 16px;
+	line-height: 12px;
 	color: #a8a8b4;
+	text-align: right;
 }
 
 p {
@@ -65,18 +69,22 @@ h3 {
 	font-size: 1rem;
 }
 
-.grayText {
-	color: #a8a8b4;
+.grayText,
+td:nth-child(2) {
+	color: #9898a4;
 }
 
 .highlightText {
-	
+	color: #ff9500;
 }
 
 
 
 /* Nav Bar */
-.navBar ul {
+
+.navBar ul,
+#writing ul,
+#marketing ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -109,15 +117,60 @@ h3 {
 
 /* Tables */
 
+#writing td,
+#marketing td {
+	vertical-align: top;
+	padding: 0px 10px 10px 0px;
+}
+
+#writing td {
+	line-height: 1.5rem;
+}
+
+#writing td:first-child,
+#marketing td:first-child {
+	font-weight: bold;
+	width: 10rem;
+}
+
+#marketing td:first-child {
+	text-align: right;
+}
 
 
 
 /* Lists */
 
+#writing h2,
+#marketing h2 {
+	text-align: center;
+}
+
+#writing li {
+	padding: 0px 0px 10px 0px;
+}
+
+#marketing ul {
+	padding: 10px 0px 0px 0px;
+}
+
+#marketing li {
+	padding: 0px 0px 0px 10px;
+}
+
+#writing li:first-child,
+#marketing li:first-child {
+	font-weight: bold;	
+}
+
+#marketing li:first-child {
+	padding: 0px 0px 0px 0px;
+}
 
 
 
 /* Buttons */
+
 button {
 	display: block;
 	background: #ff9500;
@@ -135,4 +188,9 @@ button {
 button a {
 	color: white;
 	text-decoration: none;
+}
+
+#writing button {
+	margin-left: auto;
+	margin-right: auto;
 }
