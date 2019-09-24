@@ -1,18 +1,24 @@
 /* Responsive to screen size */
 /* Large screens */
 @media screen and (min-width:800px) {
-	main {width: 70%;}
+	main {width: 70%;padding:1.5rem 3rem}
+	.desktop {display: block;}
+	.mobile {display: none;}
 }
 
 /* Medium screens */
 @media screen and (max-width:799px) {
-	main {width: 80%;}
+	main {width: 80%;padding:1rem 2rem}
+	.desktop {display: block;}
+	.mobile {display: none;}
 }
 
 /* Small screens */
 @media screen and (max-width:499px) {
-	main {width: 90%;}
+	main {width: 90%;padding: 1rem;}
 	.navBar button {display: none;}
+	.desktop {display: none;}
+	.mobile {display: block;}
 }
 
 /* The main content area within the body of the page */
@@ -25,7 +31,6 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 10px;
-	padding: 2rem;
 }
 
 body {
@@ -36,7 +41,7 @@ body {
 
 footer, footer a {
 	padding: 8% 0% 0% 0%;
-	line-height: 12px;
+	line-height: 16px;
 	color: #a8a8b4;
 }
 
@@ -99,6 +104,16 @@ h3 {
 	background: #1c1c1e;
 	color: white;
 }
+
+
+
+/* Tables */
+
+
+
+
+/* Lists */
+
 
 
 
