@@ -1,21 +1,3 @@
-/*
-Variables needed:
-1. Color
-2. Background
-3. Button background
-4. .grayText color
-5. .highlightText color
-6. a color
-*/
-
-/* VARIABLES */
-:root {
-	--color: 
-	--background: 
-}
-
-
-
 /* Responsive to screen size */
 /* Large screens */
 @media screen and (min-width:800px) {
@@ -47,33 +29,6 @@ Variables needed:
 	.blogPost h1 {font-size: 2rem; padding: 0px 0px 0px 0px}
 	.blogPost h2, .blogListItem h2 {font-size: 1.5rem;}
 }
-
-
-
-/* Themes */
-/*
-@media (prefers-color-scheme: dark) {
-
-	img {
-		opacity: .75;
-		transition: opacity .5s ease-in-out;
-	}
-	
-	img:hover {
-		opacity: 1;
-	}
-	
-	body {
-		background: #1c1c1e;
-		color: white;
-		font-weight: lighter;
-	}
-	
-	main {
-		background: #000000;
-		
-}
-*/
 
 
 
