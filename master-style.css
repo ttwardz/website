@@ -1,30 +1,33 @@
 /* Responsive to screen size */
 /* Large screens */
 @media screen and (min-width:800px) {
-	main {width: 70%;padding:1.5rem 3rem}
+	main {width: 70%; padding: 1.5rem 3rem}
+	footer button {display: none;}
 	.desktop {display: block;}
 	.mobile {display: none;}
-	.blogPost h1 {font-size: 3rem}
-	.blogPost h2 {font-size: 2rem;}
+	.blogPost h1, .blogListItem h1 {font-size: 3rem}
+	.blogPost h2, .blogListItem h2 {font-size: 2rem;}
 }
 
 /* Medium screens */
 @media screen and (max-width:799px) {
 	main {width: 80%;padding:1rem 2rem}
+	footer button {display: none;}
 	.desktop {display: block;}
 	.mobile {display: none;}
 	.blogPost h1 {font-size: 3rem}
-	.blogPost h2 {font-size: 2rem;}
+	.blogPost h2, .blogListItem h2 {font-size: 2rem;}
 }
 
 /* Small screens */
 @media screen and (max-width:499px) {
 	main {width: 90%;padding: 1rem;}
+	footer button {display: block;}
 	.navBar button {display: none;}
 	.desktop {display: none;}
 	.mobile {display: block;}
-	.blogPost h1 {font-size: 2rem}
-	.blogPost h2 {font-size: 1.5rem;}
+	.blogPost h1 {font-size: 2rem; padding: 0px 0px 0px 0px}
+	.blogPost h2, .blogListItem h2 {font-size: 1.5rem;}
 }
 
 
@@ -76,7 +79,8 @@ h3 {
 }
 
 .grayText,
-td:nth-child(2) {
+td:nth-child(2),
+.blogPost h3 {
 	color: #888894;
 }
 
@@ -211,10 +215,15 @@ button a {
 	margin-right: auto;
 }
 
+.bottomButton {
+	float: right;
+}
+
 
 
 /* Images */
 img {
 	display: block;
 	width: 100%;
+	padding: 0px 0px 0px 0px
 }
