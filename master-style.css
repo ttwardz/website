@@ -32,10 +32,41 @@
 
 
 
+/* Themes */
+@media (prefers-color-scheme: dark) {
+
+	img {
+		opacity: .75;
+		transition: opacity .5s ease-in-out;
+	}
+	
+	img:hover {
+		opacity: 1;
+	}
+	
+	body {
+		background: #1c1c1e;
+		color: white;
+		font-weight: lighter;
+	}
+	
+	main {
+		background: #000000;
+		
+}
+
+
+
 /* The main content area within the body of the page */
 
 header {
 	
+}
+
+body {
+	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+	background: #f2f2f7;
+	color: #1c1c1e;
 }
 
 main {
@@ -43,12 +74,6 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 10px;
-}
-
-body {
-	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-	background: #f2f2f7;
-	color: #1c1c1e;
 }
 
 footer, footer a {
