@@ -1,25 +1,5 @@
-/*
-Variables needed:
-1. Color
-2. Background
-3. Button background
-4. .grayText color
-5. .highlightText color
-6. a color
-*/
-
-/* VARIABLES */
-/*
-:root {
-	--color: 
-	--background: 
-	--button
-}
-*/
-
-
-
 /* Responsive to screen size */
+
 /* Large screens */
 @media screen and (min-width:800px) {
 	main {width: 70%; padding: 1.5rem 3rem}
