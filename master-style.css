@@ -1,23 +1,5 @@
-/*
-Variables needed:
-1. Color
-2. Background
-3. Button background
-4. .grayText color
-5. .highlightText color
-6. a color
-*/
-
-/* VARIABLES */
-/* 
-:root {
-	--color: 
-	--background: 
-}
-*/
-
-
 /* Responsive to screen size */
+
 /* Large screens */
 @media screen and (min-width:800px) {
 	main {width: 70%; padding: 1.5rem 3rem}
@@ -52,46 +34,38 @@ Variables needed:
 
 
 /* Themes */
-/*
-@media (prefers-color-scheme: dark) {
-
-	img {
-		opacity: .75;
-		transition: opacity .5s ease-in-out;
-	}
-	
-	img:hover {
-		opacity: 1;
-	}
-	
-	body {
-		background: #1c1c1e;
-		color: white;
-		font-weight: lighter;
-	}
-	
-	main {
-		background: #000000;
-		
+:root {
+	--color-background-body: #f2f2f7;
+	--color-background-main: #ffffff;
+	--color-text-default: #1c1c1e;
+	--gray-text: #888894;
+	--highlight-text: #ff9500;
+	--color-button-background: #ff9500
 }
-*/
 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background-body: #000000;
+		--color-background-main: #1c1c1e;
+		--color-text-default: #ffffff;
+		--gray-text: #888894;
+		--highlight-text: #ff8000;
+		--color-button-background: #ff8000;
+		--img-shadow: #000000;
+	}
+}
 
 
 /* The main content area within the body of the page */
 
-header {
-	
-}
-
 body {
 	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-	background: #f2f2f7;
-	color: #1c1c1e;
+	background: var(--color-background-body);
+	color: var(--color-text-default);
 }
 
 main {
-	background: white;
+	background: var(--color-background-main);
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 10px;
@@ -100,7 +74,7 @@ main {
 footer, footer a {
 	padding: 8% 0% 0% 0%;
 	line-height: 1rem;
-	color: #a8a8b4;
+	color: var(--gray-text);
 	text-align: right;
 }
 
@@ -109,7 +83,7 @@ p {
 }
 
 a {
-	color: #1c1c1e;
+	color: var(--link-text-default);
 }
 
 h1 {
@@ -127,12 +101,12 @@ h3 {
 .grayText,
 td:nth-child(2),
 .blogPost h3 {
-	color: #888894;
+	color: var(--gray-text);
 }
 
 .highlightText,
 .blogPost p a {
-	color: #ff9500;
+	color: var(--highlight-text);
 }
 
 .highlightText {
@@ -170,8 +144,8 @@ td:nth-child(2),
 }
 
 .navBar a.active {
-	background: #1c1c1e;
-	color: white;
+	background: var(--color-text-default);
+	color: var(--color-background-main);
 }
 
 
@@ -239,8 +213,8 @@ td:nth-child(2),
 
 button {
 	display: block;
-	background: #ff9500;
-	border: 1px solid #ff9500;
+	background: var(--color-button-background);
+	border: 1px solid var(--color-button-background);
 	border-radius: 5px;
 	font-size: 1rem;
 	font-weight: bold;
@@ -252,7 +226,7 @@ button {
 }
 
 button a {
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -271,5 +245,7 @@ button a {
 img {
 	display: block;
 	width: 100%;
-	padding: 0px 0px 0px 0px
+	padding: 0px 0px 0px 0px;
+	border-radius: 2px;
+	filter: drop-shadow(0 2px 4px var(--img-shadow));
 }
