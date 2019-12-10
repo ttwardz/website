@@ -32,18 +32,19 @@
 	<br>
 	
 	
-	
 	<div class="blogPost">
-
+		<br>
+		<p><a href="/blog">Blog</a> → A More Readable Internet</p>
+		
 		<h1>A More Readable Internet</h1>
 		
-		<img>
+		<img src="/blog/blog-assets/messi_hands_up_celebration.jpeg" alt="Messi hands-up celebration for Barcelona goal">
 		
 		<h3>December 9, 2019</h3>
 		
 		<br>
 
-		<p>I built this website using words. I set a goal: make my site readable to the people who are curious enough to inspect its source code. I think I succeeded but things have not turned out to be as simple as I'd hoped.</p>
+		<p>I built this website using words. I set a goal: make my site readable to the people who are curious enough to inspect its source code. I think I succeeded. But things have not turned out to be as simple as I'd hoped.</p>
 
 		<h2>The Complicated Web</h2>
 
@@ -72,21 +73,20 @@
 		<p>CSS variables are technically called <strong>custom properties</strong>. They work like this: you define a variable for a specific property. I used a few (shown below) to store dark and light versions of the colors in my theme.</p>
 
 		<pre>
-		<code>
-  :root {
-	--color-background-body: #f2f2f7;
-	--color-background-main: #ffffff;
-	--color-text-default: #1c1c1e;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-	--color-background-body: #000000;
-    	--color-background-main: #1c1c1e;
-	--color-text-default: #ffffff
-  }
-}
-		</code>
+  	:root {
+		--color-background-body: #f2f2f7;
+		--color-background-main: #ffffff;
+		--color-text-default: #1c1c1e;
+	}
+
+	@media (prefers-color-scheme: dark) {
+	  :root {
+		--color-background-body: #000000;
+		--color-background-main: #1c1c1e;
+		--color-text-default: #ffffff
+	  }
+	}
 		</pre>
 
 		<p>I looked at what I'd done and felt… conflicted.</p>
