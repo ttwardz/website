@@ -64,17 +64,17 @@
 
 		<p>That, I discovered, is more difficult than simply duplicating every color property and adding a second version for <code>@media (prefers-color-scheme: dark)</code>. Or, rather, it is exactly that difficult. Because that process is more than tedious: it's convoluted and inefficient and messy.</p>
 
-		<p>It was time to suck up my pride and abandon my goal of writing a website that looked like it had been built in 1999.</p>
+		<p>It was time to suck up my pride and abandon my goal of writing a website that looked like it had been <a href="https://web.archive.org/web/19991117024224/http://apple.com/">built in 1999</a>.</p>
 
 		<p>I added CSS variables.</p>
 
 		<h2>Variables Are for Programmers</h2>
 
-		<p>CSS variables are technically called <strong>custom properties</strong>. They work like this: you define a variable for a specific property. I used a few (shown below) to store dark and light versions of the colors in my theme.</p>
+		<p>CSS variables are technically called <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/—*">custom properties</a>. They work like this: you define a variable for a specific property. I used a few (shown below) to store dark and light versions of the colors in my theme.</p>
 	
 	<!-- Below, I cheated by adding 2 spaces to the end of the first long (scrolling) line to balance the 12px padding that, for some reason, wasn't appearing on the trailing edge. -->
 	<div class="codeBlock">
-<pre>:root {
+<pre><code>:root {
 	--color-background-body: #f2f2f7;  
 	--color-background-main: #ffffff;
 	--color-text-default: #1c1c1e;
@@ -86,7 +86,7 @@
 	--color-background-main: #1c1c1e;
 	--color-text-default: #ffffff
   }
-}</pre>
+}</code></pre>
 	</div>
 
 		<p>I looked at what I'd done and felt… conflicted.</p>
@@ -95,7 +95,7 @@
 
 		<p>Few. And not immediately.</p>
 
-		<p>But as far as I can tell, this is the simplest way of achieving the responsiveness that modern websites <em>must</em> prioritize. In fact, variables are much more readable than a sheet specifying the full hex values for every element of the site. That turns a CSS file into a cascade of #ff9500s and rgb(155,220,255)s.</p>
+		<p>But as far as I can tell, this is the simplest way of achieving the responsiveness that modern websites <em>must</em> prioritize. In fact, variables are much more readable than a sheet specifying the full hex values for every element of the site. That turns a CSS file into a cascade of <code>#ff9500</code>s and <code>rgb(155,220,255)</code>s.</p>
 
 		<h2>A Little Learning or a Lot of Nonsense</h2>
 
