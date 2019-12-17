@@ -1,4 +1,4 @@
-/* Responsive to screen size */
+/* Respond to screen size */
 
 /* Large screens */
 @media screen and (min-width:800px) {
@@ -34,29 +34,35 @@
 
 
 /* Themes */
+
 :root {
 	--color-background-body: #f2f2f7;
 	--color-background-main: #ffffff;
 	--color-text-default: #1c1c1e;
 	--gray-text: #888894;
 	--highlight-text: #ff9500;
-	--color-button-background: #ff9500
+	--color-button-background: #ff9500;
+	--color-codeBlock-text: #fafafa;
+	--color-codeBlock-background: #1c1c1e;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-background-body: #000000;
 		--color-background-main: #1c1c1e;
-		--color-text-default: #ffffff;
+		--color-text-default: #fafafa;
 		--gray-text: #888894;
 		--highlight-text: #ff8000;
 		--color-button-background: #ff8000;
 		--img-shadow: #000000;
+		--color-codeBlock-text: #fafafa;
+		--color-codeBlock-background: #000000;
 	}
 }
 
 
 /* The main content area within the body of the page */
+
 body {
 	font-family: "Helvetica Neue", helvetica, arial, sans-serif;
 	background: var(--color-background-body);
@@ -70,7 +76,8 @@ main {
 	border-radius: 10px;
 }
 
-footer, footer a {
+footer, 
+footer a {
 	padding: 8% 0% 0% 0%;
 	line-height: 1rem;
 	color: var(--gray-text);
@@ -97,9 +104,13 @@ h3 {
 	font-size: 1rem;
 }
 
+code {
+	font-weight: bold;
+}
+
 .grayText,
 td:nth-child(2),
-.blogPost h3 {
+.date {
 	color: var(--gray-text);
 }
 
@@ -110,6 +121,16 @@ td:nth-child(2),
 
 .highlightText {
 	font-weight: bold;
+}
+
+.codeBlock {
+	border-radius: 10px;
+	padding: 4px 12px 4px 12px;
+	color: var(--color-codeBlock-text);
+	background: var(--color-codeBlock-background);
+	/* Enable horizontal scrolling */
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 
