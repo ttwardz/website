@@ -6,6 +6,7 @@
 	footer button {display: none;}
 	.desktop {display: block;}
 	.mobile {display: none;}
+	.topnav a {padding: 14px 18px;}
 	.blogPost h1, .blogListItem h1 {font-size: 3rem}
 	.blogPost h2, .blogListItem h2 {font-size: 2rem;}
 }
@@ -16,7 +17,8 @@
 	footer button {display: none;}
 	.desktop {display: block;}
 	.mobile {display: none;}
-	.blogPost h1 {font-size: 3rem}
+	.topnav a {padding: 14px 18px;}
+	.blogPost h1 {font-size: 3rem;}
 	.blogPost h2, .blogListItem h2 {font-size: 2rem;}
 }
 
@@ -24,10 +26,9 @@
 @media screen and (max-width:499px) {
 	main {width: 90%;padding: 1rem;}
 	footer button {display: block;}
-	.navBar button {display: none;}
-	/* .topnav-right (display: none;} */
 	.desktop {display: none;}
 	.mobile {display: block;}
+	.topnav a {width: 25%; padding: 12px 0px;}
 	.blogPost h1 {font-size: 2rem; padding: 0px 0px 0px 0px}
 	.blogPost h2, .blogListItem h2 {font-size: 1.5rem;}
 }
@@ -138,41 +139,6 @@ td:nth-child(2),
 
 /* Nav Bar */
 
-.navBar ul,
-#writing ul,
-#marketing ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.navBar li {
-	float: left;
-}
-
-.navBar button {
-	float: right;
-	padding: 0px;
-}
-
-.navBar a {
-	display: block;
-	border-radius: 5px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	padding: 10px 15px;
-}
-
-.navBar a.active {
-	background: var(--color-text-default);
-	color: var(--color-background-main);
-}
-
-
-
-/* Alternative nav bar */
-
 .topnav {
 	background: var(--color-background-body);
     overflow: hidden;
@@ -182,7 +148,6 @@ td:nth-child(2),
 .topnav a {
 	float: left;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
 	font-weight: bold;
 }
