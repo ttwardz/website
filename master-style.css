@@ -31,6 +31,8 @@
 	.topnav a {width: 25%; padding: 12px 0px;}
 	.blogPost h1 {font-size: 2rem; padding: 0px 0px 0px 0px}
 	.blogPost h2, .blogListItem h2 {font-size: 1.5rem;}
+	.mobile ul { margin-left: 0; margin-right: 0; padding: 0; }
+	.mobile ul li { list-style-type: none; }
 }
 
 
