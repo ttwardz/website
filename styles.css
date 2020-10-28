@@ -156,11 +156,11 @@ pre {
     padding: 12px;
     background-color: var(--header);
     border-radius: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 code {
-    overflow-x: scroll;
-    overflow-y: hidden;
     color: var(--button);
 }
 
@@ -272,7 +272,6 @@ img {
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 140px;
-/*  background-color: var(--color-button-background);*/
   color: var(--text);
   text-align: center;
   border-radius: 6px;
@@ -286,9 +285,7 @@ img {
 .tooltip .tooltip-text::after {
   content: "   ";
   position: absolute;
-/*  top: 80%;*/
   left: 100%;
-/*  margin-top: -10px;*/
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent transparent var(--bg);
