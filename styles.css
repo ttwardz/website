@@ -341,8 +341,6 @@ img {
 @media(max-width: 400px) {
     header .wrapper {
         text-align: center;
-        overflow-x: scroll;
-        overflow-y: hidden;
     }
     
     nav li:last-child {
