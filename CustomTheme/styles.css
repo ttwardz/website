@@ -337,3 +337,15 @@ img {
         padding: 40px 20px;
     }
 }
+
+@media(max-width: 400px) {
+    header .wrapper {
+        text-align: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    nav li:last-child {
+        float: none;
+    }
+}
