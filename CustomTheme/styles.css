@@ -26,7 +26,7 @@ header {
 header .wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 header a {
@@ -36,19 +36,19 @@ header a {
 }
 
 header .site-name {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #fff;
     font-weight: bold;
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 nav li {
     display: inline-block;
     margin: 0 7px;
-    line-height: 1.5em;
+    line-height: 2.5em;
     font-weight: bold;
     color: #eee;
 }
@@ -60,9 +60,11 @@ nav li a:hover {
 
 nav li a.selected {
     background-color: var(--button);
-/*    border: 1px solid;*/
-/*    border-color: var(--highlight)*/
     color: var(--button-text);
+}
+
+nav li:last-child {
+    float: right;
 }
 
 h1 {
@@ -77,12 +79,10 @@ h1 {
     color: var(--text);
 }
 .page-title:nth-child(2) {
-/*  color: #6c6c78;*/
     color: var(--text);
     opacity: 0.6;
 }
 .page-title:nth-child(3) {
-/*  color: #a8a8b4;*/
     color: var(--text);
     opacity: 0.4;
 }
@@ -141,6 +141,14 @@ button {
     padding: 6px 8px;
     border: none;
     border-radius: 5px;
+    
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+footer button {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 button a {
@@ -195,10 +203,6 @@ blockquote {
     width: 100%;
 }
 
-/*.item-list > li:last-child {*/
-/*    margin-bottom: 0;*/
-/*}*/
-
 .item-list h1 {
     margin-bottom: 15px;
     font-size: 1.3em;
@@ -218,7 +222,7 @@ blockquote {
 .tag {
     display: inline-block;
     background-color: var(--button);
-    color: var(--header);
+    color: var(--button-text);
     padding: 6px 8px;
     border-radius: 5px;
     margin-right: 5px;
@@ -272,6 +276,7 @@ img {
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 140px;
+/*  background-color: var(--color-button-background);*/
   color: var(--text);
   text-align: center;
   border-radius: 6px;
@@ -285,7 +290,9 @@ img {
 .tooltip .tooltip-text::after {
   content: "   ";
   position: absolute;
+/*  top: 80%;*/
   left: 100%;
+/*  margin-top: -10px;*/
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent transparent var(--bg);
