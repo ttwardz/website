@@ -1,0 +1,14 @@
+<header>
+    <div class="wrapper">
+      <a class="site-name" href="/">{{ site.title }}</a>
+      <nav>
+        <ul>
+          <li><a {% if page.url == '/' %}class="selected"{% endif %} href="/">Home</a></li>
+          <li><a {% if page.url contains '/work/' %}class="selected"{% endif %} href="/work/">Work</a></li>
+          <li><a {% if page.url contains '/about/' %}class="selected"{% endif %} href="/about/">About</a></li>
+          <li><a href="https://bumnotes.net/" target="_blank" rel="noreferrer">Bum Notes</a></li>
+          <li><a class="selected" href="mailto:{{ site.email }}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
