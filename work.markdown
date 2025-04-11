@@ -6,7 +6,7 @@ permalink: /work/
 
 ## Bum Notes
 
-My blog is where you can find writing about music, art, productivity, work, and creative projects. As an experiment, I'm also writing social-network type posts that I'm calling "journal" entries. Maybe I'll also share some of them on the big social networks, maybe I won't.
+My blog is where you can find writing about music, art, productivity, work, and creative projects. As an experiment, I'm also writing social network--type posts that I'm calling "journal" entries. Maybe I'll also share some of them on the big social networks, maybe I won't.
 
 **Check out the blog: [Bum Notes](https://bumnotes.net/){:target="_blank" rel="noopener noreferrer"}**
 
