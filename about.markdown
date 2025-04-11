@@ -14,7 +14,7 @@ My writing and SEO work has increased clients' organic sessions by as much as te
 - Blog posts, how-to guides, product comparisons.
 - Amazon seller pages and product listings need keyword optimization.
 
-Whether it's an article, ad copy, email newsletter, slideshow, ebook, poem, or something else—it takes professional writing to properly showcase your products or services.
+Whether it's an article, ad copy, email newsletter, slideshow, ebook, poem, or something else---it takes professional writing to properly showcase your products or services.
 
 I've produced hundreds of articles that cover lifestyle, pop culture, finance and travel. I've created content for pet food companies and international commodity exchanges. I've written tens of thousands of words specifically about bugs. Yep.
 
@@ -23,10 +23,10 @@ Whatever content you need written, whatever story you need told, whatever produc
 ## My Experience
 
 ### Writer and Editor
-Elite Editing Agency (2021–Present)
+Elite Editing Agency (2021--Present)
 
 ### Editor and Staff Writer
-MUO (formerly MakeUseOf) (2021–2024)
+MUO (formerly MakeUseOf) (2021--2024)
 
 ### SEO Copywriter
 Direct Agents
