@@ -1,15 +1,17 @@
 <footer>
-    <p><button><a href="mailto:{{ site.email }}">Contact</a></button></p>
-    <p>Copyright © {{ site.time | date: '%Y' }} Tommy Twardzik</p>
-    <p>
-      <a href="https://twitter.com/ttwardz">Twitter</a>
-      <a rel="me" href="https://mstdn.social/@ttwardz">Mastodon</a>
-      <a href="https://www.linkedin.com/in/tom-twardzik/">LinkedIn</a>
-    </p>
-    {% if page.url contains '/about/' %}
-    <div class="tooltip">
-      <a href="https://www.mrstspierogies.com/" target="_blank" rel="noopener noreferrer"><title>Mrs. T's Pierogies</title>Looking for pierogies?</a>
-      <span class="tooltip-text">That's the other Tom Twardzik ➡️</span>
+    <div class="wrapper">
+      <p><button><a href="mailto:{{ site.email }}">Contact</a></button></p>
+      <p>Copyright © {{ site.time | date: '%Y' }} Tommy Twardzik</p>
+      <p>
+        <a rel="me" href="https://mstdn.social/@ttwardz" target="_blank" rel="noopener noreferrer">Mastodon</a>
+        <a href="https://www.linkedin.com/in/tom-twardzik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ttwardz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      {% if page.url contains '/about/' %}
+      <div class="tooltip">
+        <a href="https://www.mrstspierogies.com/" target="_blank" rel="noopener noreferrer"><title>Mrs. T's Pierogies</title>Looking for pierogies?</a>
+        <span class="tooltip-text">That's the other Tom Twardzik ➡️</span>
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
   </footer>

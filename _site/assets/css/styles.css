@@ -24,8 +24,6 @@ header {
 }
 
 header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
     text-align: left;
 }
 
@@ -41,8 +39,17 @@ header .site-name {
     font-weight: bold;
 }
 
+header .site-subtitle {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
 nav {
-    margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: -10px;
 }
 
 nav li {
@@ -267,9 +274,15 @@ blockquote {
 footer {
     color: var(--text);
     opacity: 0.8;
-    text-align: right;
-    margin-right: 40px;
     padding-bottom: 20px;
+}
+
+footer .wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    text-align: right;
 }
 
 img {
@@ -279,6 +292,32 @@ img {
     margin-bottom: 16px;
 }
 
+.multi-column {
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+}
+
+.multi-column img {
+    max-width: 250px;
+    height: 300px;
+    object-fit: scale-down;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.multi-column div {
+    flex: 1;
+}
+
+.theme-image-light {
+    display: block;
+}
+
+.theme-image-dark {
+    display: none;
+}
 
 /* Tooltip */
 .tooltip {
@@ -342,6 +381,18 @@ img {
     
     header .site-name {
         color: #eee;
+    }
+    
+    header .site-subtitle {
+        color: #aaa;
+    }
+    
+    .theme-image-light {
+        display: none;
+    }
+    
+    .theme-image-dark {
+        display: block;
     }
 }
 

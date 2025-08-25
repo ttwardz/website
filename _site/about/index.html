@@ -39,11 +39,12 @@
 <body>
   <header>
     <div class="wrapper">
-      <a class="site-name" href="/">Tommy Twardzik</a>
+      <a class="site-name" id="site-title" href="/">Tommy Twardzik</a>
+      <div class="site-subtitle">Writer. Editor. Developer. SEO.</div>
       <nav>
         <ul>
           <li><a  href="/">Home</a></li>
-          <li><a  href="/work/">Work</a></li>
+          <li><a  href="/work/">Projects</a></li>
           <li><a class="selected" href="/about/">About</a></li>
           <li><a href="https://bumnotes.net/" target="_blank" rel="noreferrer">Bum Notes</a></li>
           <li><a class="selected" href="mailto:ttwardzik@gmail.com">Contact</a></li>
@@ -51,6 +52,23 @@
       </nav>
     </div>
   </header>
+  <script>
+    function updateSiteTitle() {
+      const now = new Date();
+      const hour = now.getHours();
+      const titleElement = document.getElementById('site-title');
+      
+      if (titleElement) {
+        if (hour >= 21 || hour < 5) {
+          titleElement.innerHTML = 'Tommy Twardzik <em>After Dark</em>';
+        } else {
+          titleElement.textContent = 'Tommy Twardzik';
+        }
+      }
+    }
+    
+    updateSiteTitle();
+  </script>
   <div class="wrapper">
     <h1>About</h1>
 <p>I’ve been creating engaging, tailored digital content for the websites and social media accounts of a wide variety of organizations since 2016.</p>
@@ -92,19 +110,21 @@ Popdust, Paypath, Journiest, Liberty Project and others</p>
 
   </div>
   <footer>
-    <p><button><a href="mailto:ttwardzik@gmail.com">Contact</a></button></p>
-    <p>Copyright © 2025 Tommy Twardzik</p>
-    <p>
-      <a href="https://twitter.com/ttwardz">Twitter</a>
-      <a rel="me" href="https://mstdn.social/@ttwardz">Mastodon</a>
-      <a href="https://www.linkedin.com/in/tom-twardzik/">LinkedIn</a>
-    </p>
-    
-    <div class="tooltip">
-      <a href="https://www.mrstspierogies.com/" target="_blank" rel="noopener noreferrer"><title>Mrs. T's Pierogies</title>Looking for pierogies?</a>
-      <span class="tooltip-text">That's the other Tom Twardzik ➡️</span>
+    <div class="wrapper">
+      <p><button><a href="mailto:ttwardzik@gmail.com">Contact</a></button></p>
+      <p>Copyright © 2025 Tommy Twardzik</p>
+      <p>
+        <a rel="me" href="https://mstdn.social/@ttwardz" target="_blank" rel="noopener noreferrer">Mastodon</a>
+        <a href="https://www.linkedin.com/in/tom-twardzik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ttwardz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      
+      <div class="tooltip">
+        <a href="https://www.mrstspierogies.com/" target="_blank" rel="noopener noreferrer"><title>Mrs. T's Pierogies</title>Looking for pierogies?</a>
+        <span class="tooltip-text">That's the other Tom Twardzik ➡️</span>
+      </div>
+      
     </div>
-    
   </footer>
 </body>
 </html>

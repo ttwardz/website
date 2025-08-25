@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-<p>
-  <span class="page-title">Writer</span>
-  <span class="page-title"> Editor</span>
-  <span class="page-title"> SEO</span>
-</p>
 <p class="content">
   <h1>
     <span class="page-subtitle">Writing and Editing</span>
