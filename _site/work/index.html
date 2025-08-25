@@ -6,9 +6,9 @@
   <link rel="canonical" href="http://localhost:4000/work/"/>
   <meta name="twitter:url" content="http://localhost:4000/work/"/>
   <meta name="og:url" content="http://localhost:4000/work/"/>
-  <title>My Work | Tommy Twardzik</title>
-  <meta name="twitter:title" content="My Work | Tommy Twardzik"/>
-  <meta name="og:title" content="My Work | Tommy Twardzik"/>
+  <title>My Projects | Tommy Twardzik</title>
+  <meta name="twitter:title" content="My Projects | Tommy Twardzik"/>
+  <meta name="og:title" content="My Projects | Tommy Twardzik"/>
   <meta name="description" content="Writer. Editor. SEO."/>
   <meta name="twitter:description" content="Writer. Editor. SEO."/>
   <meta name="og:description" content="Writer. Editor. SEO."/>
@@ -19,9 +19,9 @@
   <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Subscribe to Tommy Twardzik"/>
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tommy Twardzik" />
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>My Work | Tommy Twardzik</title>
+<title>My Projects | Tommy Twardzik</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="My Work" />
+<meta property="og:title" content="My Projects" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Writer. Editor. SEO." />
 <meta property="og:description" content="Writer. Editor. SEO." />
@@ -30,20 +30,26 @@
 <meta property="og:site_name" content="Tommy Twardzik" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="My Work" />
+<meta property="twitter:title" content="My Projects" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Writer. Editor. SEO.","headline":"My Work","url":"http://localhost:4000/work/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Writer. Editor. SEO.","headline":"My Projects","url":"http://localhost:4000/work/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 <body>
   <header>
     <div class="wrapper">
-      <a class="site-name" href="/">Tommy Twardzik</a>
+      <div class="header-content">
+        <div class="header-text">
+          <a class="site-name" id="site-title" href="/">Tommy Twardzik</a>
+          <div class="site-subtitle">Writer. Editor. Developer. SEO.</div>
+        </div>
+        <img src="/assets/images/profile-pic.jpg" alt="Tommy Twardzik profile picture" class="profile-pic">
+      </div>
       <nav>
         <ul>
           <li><a  href="/">Home</a></li>
-          <li><a class="selected" href="/work/">Work</a></li>
+          <li><a class="selected" href="/work/">Projects</a></li>
           <li><a  href="/about/">About</a></li>
           <li><a href="https://bumnotes.net/" target="_blank" rel="noreferrer">Bum Notes</a></li>
           <li><a class="selected" href="mailto:ttwardzik@gmail.com">Contact</a></li>
@@ -51,15 +57,60 @@
       </nav>
     </div>
   </header>
+  <script>
+    function updateSiteTitle() {
+      const now = new Date();
+      const hour = now.getHours();
+      const titleElement = document.getElementById('site-title');
+      
+      if (titleElement) {
+        if (hour >= 21 || hour < 5) {
+          titleElement.innerHTML = 'Tommy Twardzik <em>After Dark</em>';
+        } else {
+          titleElement.textContent = 'Tommy Twardzik';
+        }
+      }
+    }
+    
+    updateSiteTitle();
+  </script>
   <div class="wrapper">
-    <h1>My Work</h1>
-<h2 id="bum-notes">Bum Notes</h2>
+    <h1>My Projects</h1>
+<div class="multi-column">
 
-<p>My blog is where you can find writing about music, art, productivity, work, and creative projects. As an experiment, I’m also writing social-network type posts that I’m calling “journal” entries. Maybe I’ll also share some of them on the big social networks, maybe I won’t.</p>
+<div>
+<h2>📖 Bum Notes</h2>
+<p>My blog is where you can find writing about music, art, productivity, work, and creative projects. As an experiment, I'm also writing social network--type posts that I'm calling "journal" entries. Maybe I'll also share some of them on the big social networks, maybe I won't.</p>
 
-<p><strong>Check out the blog: <a href="https://bumnotes.net/" target="_blank" rel="noopener noreferrer">Bum Notes</a></strong></p>
+<p>Check out the blog: <strong><a href="https://bumnotes.net/" target="_blank" rel="noopener noreferrer">Bum Notes</a></strong></p>
+</div>
 
-<h2 id="a-selection-of-my-writing">A Selection of My Writing</h2>
+<img src="/assets/images/bum-notes-homepage-light.png" alt="Screenshot of the Bum Notes blog with a light theme" class="theme-image-light" />
+<img src="/assets/images/bum-notes-homepage-dark.png" alt="Screenshot of the Bum Notes blog with a dark theme" class="theme-image-dark" />
+
+</div>
+
+<p><br /></p>
+
+<div class="multi-column">
+
+<div>
+<h2>📱 Clew</h2>
+<p>Clew is your new favorite place to store, sort, and share clippings all your favorite media, whether it's a mind-blowing plot twist in a novel, a hilarious quote in a movie or play, a devastating song lyric, a grand discovery in an article, or simply a quirky adjective you can't wait to use in your own writing.</p>
+
+<p><strong><a href="https://apps.apple.com/app/clew-highlights-and-notes/id6477902274" target="_blank" rel="noopener noreferrer">Download the app for free on the App Store</a></strong>.</p>
+
+<p>Or <a href="https://getclew.com" target="_blank" rel="noopener noreferrer">explore more about Clew</a> on the website.</p>
+</div>
+
+<img src="/assets/images/clew-plath-bell-jar-light.PNG" alt="Screenshot of the Clew app with a light theme showing a highlight from Sylvia Plath's The Bell Jar" class="theme-image-light" />
+<img src="/assets/images/clew-plath-bell-jar-dark.PNG" alt="Screenshot of the Clew app with a dark theme showing a highlight from Sylvia Plath's The Bell Jar" class="theme-image-dark" />
+
+</div>
+
+<p><br /></p>
+
+<h2 id="️-a-selection-of-my-writing">✏️ A Selection of My Writing</h2>
 
 <h3 id="what-is-stolen-device-protection-for-iphone-how-to-enable-it"><a href="https://www.makeuseof.com/iphone-stolen-device-protection/" target="_blank" rel="noopener noreferrer">What Is Stolen Device Protection for iPhone? How to Enable It</a></h3>
 
@@ -127,7 +178,7 @@
 
 <hr />
 
-<h2 id="writing-and-editing">Writing and Editing</h2>
+<h2 id="writing-and-editing-roles">Writing and Editing Roles</h2>
 
 <h3 id="editing">Editing</h3>
 <ul>
@@ -172,14 +223,16 @@
 
   </div>
   <footer>
-    <p><button><a href="mailto:ttwardzik@gmail.com">Contact</a></button></p>
-    <p>Copyright © 2025 Tommy Twardzik</p>
-    <p>
-      <a href="https://twitter.com/ttwardz">Twitter</a>
-      <a rel="me" href="https://mstdn.social/@ttwardz">Mastodon</a>
-      <a href="https://www.linkedin.com/in/tom-twardzik/">LinkedIn</a>
-    </p>
-    
+    <div class="wrapper">
+      <p><button class="glossy-button"><a href="mailto:ttwardzik@gmail.com">Contact</a></button></p>
+      <p>Copyright © 2025 Tommy Twardzik</p>
+      <p>
+        <a rel="me" href="https://mstdn.social/@ttwardz" target="_blank" rel="noopener noreferrer">Mastodon</a>
+        <a href="https://www.linkedin.com/in/tom-twardzik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ttwardz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      
+    </div>
   </footer>
 </body>
 </html>

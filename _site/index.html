@@ -39,11 +39,17 @@
 <body>
   <header>
     <div class="wrapper">
-      <a class="site-name" href="/">Tommy Twardzik</a>
+      <div class="header-content">
+        <div class="header-text">
+          <a class="site-name" id="site-title" href="/">Tommy Twardzik</a>
+          <div class="site-subtitle">Writer. Editor. Developer. SEO.</div>
+        </div>
+        <img src="/assets/images/profile-pic.jpg" alt="Tommy Twardzik profile picture" class="profile-pic">
+      </div>
       <nav>
         <ul>
           <li><a class="selected" href="/">Home</a></li>
-          <li><a  href="/work/">Work</a></li>
+          <li><a  href="/work/">Projects</a></li>
           <li><a  href="/about/">About</a></li>
           <li><a href="https://bumnotes.net/" target="_blank" rel="noreferrer">Bum Notes</a></li>
           <li><a class="selected" href="mailto:ttwardzik@gmail.com">Contact</a></li>
@@ -51,34 +57,48 @@
       </nav>
     </div>
   </header>
+  <script>
+    function updateSiteTitle() {
+      const now = new Date();
+      const hour = now.getHours();
+      const titleElement = document.getElementById('site-title');
+      
+      if (titleElement) {
+        if (hour >= 21 || hour < 5) {
+          titleElement.innerHTML = 'Tommy Twardzik <em>After Dark</em>';
+        } else {
+          titleElement.textContent = 'Tommy Twardzik';
+        }
+      }
+    }
+    
+    updateSiteTitle();
+  </script>
   <div class="wrapper">
-    <p>
-  <span class="page-title">Writer</span>
-  <span class="page-title"> Editor</span>
-  <span class="page-title"> SEO</span>
-</p>
-<p class="content">
+    <p class="content">
   <h1>
     <span class="page-subtitle">Writing and Editing</span>
     <span class="page-subtitle"> by Tommy Twardzik</span>
   </h1>
   <p>Product guides, case studies, scriptwriting, keyword research, and digital marketing services.</p>
 </p>
-<p><button><a href="/work/">Explore my work</a></button>
+<p><button class="glossy-button"><a href="/work/">Explore my work</a></button>
 <br /></p>
 <hr />
 
 
   </div>
   <footer>
-    <p><button><a href="mailto:ttwardzik@gmail.com">Contact</a></button></p>
-    <p>Copyright © 2025 Tommy Twardzik</p>
-    <p>
-      <a href="https://twitter.com/ttwardz">Twitter</a>
-      <a rel="me" href="https://mstdn.social/@ttwardz">Mastodon</a>
-      <a href="https://www.linkedin.com/in/tom-twardzik/">LinkedIn</a>
-    </p>
-    
+    <div class="wrapper">
+      <p><button class="glossy-button"><a href="mailto:ttwardzik@gmail.com">Contact</a></button></p>
+      <p>Copyright © 2025 Tommy Twardzik</p>
+      <p>
+        <a rel="me" href="https://mstdn.social/@ttwardz" target="_blank" rel="noopener noreferrer">Mastodon</a>
+        <a href="https://www.linkedin.com/in/tom-twardzik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ttwardz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      
+    </div>
   </footer>
 </body>
 </html>

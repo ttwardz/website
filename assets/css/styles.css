@@ -20,13 +20,35 @@ body {
 }
 
 header {
-    background-color: var(--header);
+    background-color: var(--header-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
     text-align: left;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+    /* margin-right: 10px; */
 }
 
 header a {
@@ -39,28 +61,33 @@ header .site-name {
     font-size: 2em;
     color: #fff;
     font-weight: bold;
+    padding: 0px;
+}
+
+header .site-subtitle {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 5px;
+    /* margin-left: 10px; */
+    font-weight: normal;
 }
 
 nav {
     margin-top: 0px;
+    margin-bottom: -10px;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 7px;
+    margin: 0;
     line-height: 2.5em;
     font-weight: bold;
     color: #eee;
 }
 
-nav li a:hover {
-    background-color: var(--button);
-    color: var(--button-text);
-}
-
 nav li a.selected {
-    background-color: var(--button);
-    color: var(--button-text);
+    background: linear-gradient(135deg, rgba(255, 216, 3, 0.95), rgba(255, 216, 3, 0.8));
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 nav li:last-child {
@@ -134,14 +161,27 @@ ul {
     line-height: 1.5em;
 }
 
+.glossy-button {
+    background: linear-gradient(135deg, var(--button-glass), rgba(255, 216, 3, 0.6));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    color: var(--button-text);
+}
+
+.glossy-button:hover {
+    background: linear-gradient(135deg, rgba(255, 216, 3, 0.9), rgba(255, 216, 3, 0.7));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
 button {
     display: inline-block;
-    background-color: var(--button);
-    color: var(--header);
     padding: 6px 8px;
     border: none;
-    border-radius: 5px;
-    
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -210,7 +250,10 @@ blockquote {
     display: block;
     padding: 20px;
     border-radius: 20px;
-    background-color: var(--block);
+    background-color: var(--block-glass);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
     width: 100%;
 }
@@ -233,11 +276,16 @@ blockquote {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: var(--button);
-    color: var(--button-text);
     padding: 6px 8px;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-right: 5px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.tag-list li:hover,
+.tag:hover {
+    transform: translateY(-0.5px);
 }
 
 .tag-list a,
@@ -267,9 +315,15 @@ blockquote {
 footer {
     color: var(--text);
     opacity: 0.8;
-    text-align: right;
-    margin-right: 40px;
     padding-bottom: 20px;
+}
+
+footer .wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    text-align: right;
 }
 
 img {
@@ -279,6 +333,32 @@ img {
     margin-bottom: 16px;
 }
 
+.multi-column {
+    display: flex; 
+    align-items: top;
+    gap: 20px;
+}
+
+.multi-column img {
+    max-width: 250px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.multi-column div {
+    flex: 1;
+}
+
+.theme-image-light {
+    display: block;
+}
+
+.theme-image-dark {
+    display: none;
+}
 
 /* Tooltip */
 .tooltip {
@@ -324,10 +404,13 @@ img {
 :root {
     --bg: #fff;
     --header: #2d334a;
+    --header-glass: rgba(45, 51, 74, 1);
     --block: #e3f6f5;
+    --block-glass: rgba(227, 246, 245, 0.7);
     --highlight: #2d334a;
     --text: #272343;
     --button: #ffd803;
+    --button-glass: rgba(255, 216, 3, 0.8);
     --button-text: #272343;
 }
 
@@ -335,13 +418,28 @@ img {
     :root {
         --bg: #222;
         --header: #000;
+        --header-glass: rgba(0, 0, 0, 0.8);
         --block: #444;
+        --block-glass: rgba(68, 68, 68, 0.6);
         --highlight: #ffd803;
         --text: #eee;
+        --button-glass: rgba(255, 216, 3, 0.85);
     }
     
     header .site-name {
         color: #eee;
+    }
+    
+    header .site-subtitle {
+        color: #aaa;
+    }
+    
+    .theme-image-light {
+        display: none;
+    }
+    
+    .theme-image-dark {
+        display: block;
     }
 }
 
@@ -349,6 +447,9 @@ img {
 @media(max-width: 600px) {
     .wrapper {
         padding: 40px 20px;
+    }
+    footer .wrapper {
+        padding: 0 20px;
     }
 }
 

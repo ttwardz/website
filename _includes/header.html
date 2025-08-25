@@ -1,10 +1,16 @@
 <header>
     <div class="wrapper">
-      <a class="site-name" href="/">{{ site.title }}</a>
+      <div class="header-content">
+        <div class="header-text">
+          <a class="site-name" id="site-title" href="/">{{ site.title }}</a>
+          <div class="site-subtitle">Writer. Editor. Developer. SEO.</div>
+        </div>
+        <img src="/assets/images/profile-pic.jpg" alt="Tommy Twardzik profile picture" class="profile-pic">
+      </div>
       <nav>
         <ul>
           <li><a {% if page.url == '/' %}class="selected"{% endif %} href="/">Home</a></li>
-          <li><a {% if page.url contains '/work/' %}class="selected"{% endif %} href="/work/">Work</a></li>
+          <li><a {% if page.url contains '/work/' %}class="selected"{% endif %} href="/work/">Projects</a></li>
           <li><a {% if page.url contains '/about/' %}class="selected"{% endif %} href="/about/">About</a></li>
           <li><a href="https://bumnotes.net/" target="_blank" rel="noreferrer">Bum Notes</a></li>
           <li><a class="selected" href="mailto:{{ site.email }}">Contact</a></li>
@@ -12,3 +18,20 @@
       </nav>
     </div>
   </header>
+  <script>
+    function updateSiteTitle() {
+      const now = new Date();
+      const hour = now.getHours();
+      const titleElement = document.getElementById('site-title');
+      
+      if (titleElement) {
+        if (hour >= 21 || hour < 5) {
+          titleElement.innerHTML = '{{ site.title }} <em>After Dark</em>';
+        } else {
+          titleElement.textContent = '{{ site.title }}';
+        }
+      }
+    }
+    
+    updateSiteTitle();
+  </script>
