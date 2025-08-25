@@ -4,35 +4,35 @@ title: My Projects
 permalink: /work/
 ---
 
-## 📖 Bum Notes
-
 <div class="multi-column">
-<img src="/assets/images/bum-notes-homepage-light.png" alt="Screenshot of the Bum Notes blog with a light theme" class="theme-image-light">
-<img src="/assets/images/bum-notes-homepage-dark.png" alt="Screenshot of the Bum Notes blog with a dark theme" class="theme-image-dark">
 
 <div>
+<h2>📖 Bum Notes</h2>
 <p>My blog is where you can find writing about music, art, productivity, work, and creative projects. As an experiment, I'm also writing social network--type posts that I'm calling "journal" entries. Maybe I'll also share some of them on the big social networks, maybe I won't.</p>
 
 <p>Check out the blog: <strong><a href="https://bumnotes.net/" target="_blank" rel="noopener noreferrer">Bum Notes</a></strong></p>
 </div>
 
+<img src="/assets/images/bum-notes-homepage-light.png" alt="Screenshot of the Bum Notes blog with a light theme" class="theme-image-light">
+<img src="/assets/images/bum-notes-homepage-dark.png" alt="Screenshot of the Bum Notes blog with a dark theme" class="theme-image-dark">
+
 </div>
 
 <br>
 
-## 📱 Clew
-
 <div class="multi-column">
-<img src="/assets/images/clew-plath-bell-jar-light.PNG" alt="Screenshot of the Clew app with a light theme showing a highlight from Sylvia Plath's The Bell Jar" class="theme-image-light">
-<img src="/assets/images/clew-plath-bell-jar-dark.PNG" alt="Screenshot of the Clew app with a dark theme showing a highlight from Sylvia Plath's The Bell Jar" class="theme-image-dark">
 
 <div>
+<h2>📱 Clew</h2>
 <p>Clew is your new favorite place to store, sort, and share clippings all your favorite media, whether it's a mind-blowing plot twist in a novel, a hilarious quote in a movie or play, a devastating song lyric, a grand discovery in an article, or simply a quirky adjective you can't wait to use in your own writing.</p>
 
-<p><a href="https://getclew.com" target="_blank" rel="noopener noreferrer">Explore more about Clew</a> on the website.</p>
+<p><strong><a href="https://apps.apple.com/app/clew-highlights-and-notes/id6477902274" target="_blank" rel="noopener noreferrer">Download the app for free on the App Store</a></strong>.</p>
 
-<p>Or <strong><a href="https://apps.apple.com/app/clew-highlights-and-notes/id6477902274" target="_blank" rel="noopener noreferrer">download the app for free on the App Store</a></strong>.</p>
+<p>Or <a href="https://getclew.com" target="_blank" rel="noopener noreferrer">explore more about Clew</a> on the website.</p>
 </div>
+
+<img src="/assets/images/clew-plath-bell-jar-light.PNG" alt="Screenshot of the Clew app with a light theme showing a highlight from Sylvia Plath's The Bell Jar" class="theme-image-light">
+<img src="/assets/images/clew-plath-bell-jar-dark.PNG" alt="Screenshot of the Clew app with a dark theme showing a highlight from Sylvia Plath's The Bell Jar" class="theme-image-dark">
 
 </div>
 

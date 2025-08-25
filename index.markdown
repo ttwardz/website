@@ -8,6 +8,6 @@ layout: default
   </h1>
   <p>Product guides, case studies, scriptwriting, keyword research, and digital marketing services.</p>
 </p>
-<button><a href="/work/">Explore my work</a></button>
+<button class="glossy-button"><a href="/work/">Explore my work</a></button>
 <br/>
 <hr/>

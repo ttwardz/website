@@ -1,7 +1,12 @@
 <header>
     <div class="wrapper">
-      <a class="site-name" id="site-title" href="/">{{ site.title }}</a>
-      <div class="site-subtitle">Writer. Editor. Developer. SEO.</div>
+      <div class="header-content">
+        <div class="header-text">
+          <a class="site-name" id="site-title" href="/">{{ site.title }}</a>
+          <div class="site-subtitle">Writer. Editor. Developer. SEO.</div>
+        </div>
+        <img src="/assets/images/profile-pic.jpg" alt="Tommy Twardzik profile picture" class="profile-pic">
+      </div>
       <nav>
         <ul>
           <li><a {% if page.url == '/' %}class="selected"{% endif %} href="/">Home</a></li>
