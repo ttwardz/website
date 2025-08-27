@@ -334,9 +334,9 @@ img {
 }
 
 .multi-column {
-    display: flex; 
-    align-items: top;
-    gap: 20px;
+  display: flex;
+  flex-direction: column; /* Stack by default on mobile */
+  gap: 16px;
 }
 
 .multi-column img {
@@ -461,4 +461,24 @@ img {
     nav li:last-child {
         float: none;
     }
+}
+
+@media (min-width: 768px) {
+  .multi-column {
+    flex-direction: row; /* Side-by-side layout on wider screens */
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .multi-column > div {
+    flex: 1;
+  }
+
+  .multi-column img {
+    flex-shrink: 0;
+    max-width: 250px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
 }
