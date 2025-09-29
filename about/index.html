@@ -9,20 +9,7 @@
   <link rel="icon" href="/assets/images/favicon.png">
 </head>
 <body>
-  <header>
-    <a href="/" id="site-title">Tommy Twardzik</a>
-    <p>Writer. Editor. Developer. SEO.</p>
-    <img src="/assets/images/profile-pic.JPG" alt="Tommy Twardzik profile picture">
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/work/">Projects</a></li>
-        <li><a href="/about/" aria-current="page">About</a></li>
-        <li><a href="https://bumnotes.net/" target="_blank" rel="noreferrer">Bum Notes</a></li>
-        <li><a href="mailto:ttwardzik@gmail.com">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div data-include="header"></div>
 
   <main>
     <h1>About</h1>
@@ -78,19 +65,12 @@
     </section>
   </main>
 
-  <footer>
-    <a href="mailto:ttwardzik@gmail.com">Contact</a>
-    <p>Copyright © 2025 Tommy Twardzik</p>
-    <nav aria-label="Social media links">
-      <a rel="me" href="https://mstdn.social/@ttwardz" target="_blank" rel="noopener noreferrer">Mastodon</a>
-      <a href="https://www.linkedin.com/in/tom-twardzik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/ttwardz" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </nav>
-    <div>
-      <a href="https://www.mrstspierogies.com/" target="_blank" rel="noopener noreferrer">Looking for pierogies?</a>
-      <span>That's the other Tom Twardzik ➡️</span>
-    </div>
-  </footer>
+  <div data-include="footer"></div>
+
+  <div style="text-align: right; margin-top: 20px;">
+    <a href="https://www.mrstspierogies.com/" target="_blank" rel="noopener noreferrer">Looking for pierogies?</a>
+    <span>That's the other Tom Twardzik ➡️</span>
+  </div>
 
   <script src="/assets/js/site.js"></script>
 </body>

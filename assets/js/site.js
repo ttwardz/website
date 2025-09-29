@@ -1,14 +1,45 @@
+// Load HTML includes
+async function loadIncludes() {
+  // Load header
+  const headerElement = document.querySelector('[data-include="header"]');
+  if (headerElement) {
+    try {
+      const response = await fetch('/includes/header.html');
+      const html = await response.text();
+      headerElement.outerHTML = html;
+    } catch (error) {
+      console.error('Failed to load header:', error);
+    }
+  }
+
+  // Load footer
+  const footerElement = document.querySelector('[data-include="footer"]');
+  if (footerElement) {
+    try {
+      const response = await fetch('/includes/footer.html');
+      const html = await response.text();
+      footerElement.outerHTML = html;
+    } catch (error) {
+      console.error('Failed to load footer:', error);
+    }
+  }
+
+  // After includes are loaded, run after-hours updates and set active nav
+  updateSiteForAfterHours();
+  setActiveNavLink();
+}
+
 function updateSiteForAfterHours() {
   const now = new Date();
   const hour = now.getHours();
   //TODO: reactivate time check after testing
-  const isAfterDark = true//hour >= 21 || hour < 5;
+  const isAfterDark = true //hour >= 21 || hour < 5;
 
   // Update site title
   const titleElement = document.getElementById('site-title');
   if (titleElement) {
     if (isAfterDark) {
-      titleElement.innerHTML = "Hello, You've Reached Tommy Twardzik<br><em>After Hours</em>";
+      titleElement.innerHTML = "Hello, You've Reached Tommy Twardzik <em>After Hours</em>";
     } else {
       titleElement.textContent = "Hello, You've Reached Tommy Twardzik";
     }
@@ -25,4 +56,28 @@ function updateSiteForAfterHours() {
   });
 }
 
-updateSiteForAfterHours();
+function setActiveNavLink() {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('header nav a');
+
+  navLinks.forEach(link => {
+    // Skip external links and mailto links
+    if (link.href.startsWith('http') && !link.href.includes(window.location.hostname) ||
+        link.href.startsWith('mailto:')) {
+      return;
+    }
+
+    const linkPath = new URL(link.href).pathname;
+
+    // Check if this link matches the current page
+    if (linkPath === currentPath ||
+        (currentPath === '/' && linkPath === '/') ||
+        (currentPath.startsWith('/work') && linkPath === '/work/') ||
+        (currentPath.startsWith('/about') && linkPath === '/about/')) {
+      link.classList.add('active');
+    }
+  });
+}
+
+// Initialize when page loads
+loadIncludes();
