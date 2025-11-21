@@ -181,6 +181,39 @@ section {
     margin-bottom: 30px;
 }
 
+/* Two-column layout for sections with images on wider screens */
+main section:has(img) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    align-items: flex-start;
+}
+
+main section:has(img) h2 {
+    flex-basis: 100%;
+}
+
+main section:has(img) p {
+    flex: 1 1 400px;
+}
+
+main section:has(img) img {
+    flex: 0 0 200px;
+    order: 999;
+}
+
+@media (max-width: 650px) {
+    main section:has(img) p {
+        flex-basis: 100%;
+    }
+
+    main section:has(img) img {
+        flex-basis: auto;
+        width: 65%;
+        order: 0;
+    }
+}
+
 article {
     margin-bottom: 20px;
 }
@@ -245,6 +278,26 @@ main a[href="/work/"] {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+/* Hide dark theme images in light mode */
+img[src*="-dark.png"],
+img[src*="-dark.PNG"] {
+    display: none;
+}
+
+/* Show dark theme images and hide light theme images in dark mode */
+@media (prefers-color-scheme: dark) {
+    img[src*="-light.png"],
+    img[src*="-light.PNG"] {
+        display: none;
+    }
+
+    img[src*="-dark.png"],
+    img[src*="-dark.PNG"] {
+        display: block;
+    }
 }
 
 footer {
