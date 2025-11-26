@@ -32,16 +32,15 @@ async function loadIncludes() {
 function updateSiteForAfterHours() {
   const now = new Date();
   const hour = now.getHours();
-  //TODO: reactivate time check after testing
-  const isAfterDark = true //hour >= 21 || hour < 5;
+  const isAfterDark = hour >= 21 || hour < 5;
 
   // Update site title
   const titleElement = document.getElementById('site-title');
   if (titleElement) {
     if (isAfterDark) {
-      titleElement.innerHTML = "Hello, You've Reached Tommy Twardzik <em>After Hours</em>";
+      titleElement.innerHTML = "Hello, You've Reached the Website of Tommy Twardzik <em>After Hours</em>";
     } else {
-      titleElement.textContent = "Hello, You've Reached Tommy Twardzik";
+      titleElement.textContent = "Writing and Development by Tommy Twardzik";
     }
   }
 
