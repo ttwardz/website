@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Design Options Comparison</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    /* Reset some base styles for this test page */
+    body {
+      padding: 0;
+      max-width: none;
+    }
+
+    .option-container {
+      margin-bottom: 120px;
+      background: #fafafa;
+    }
+
+    .option-label {
+      background: #000;
+      color: #fff;
+      padding: 16px 40px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .option-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    /* Option 1: Bold Black Bar */
+    .option-1 header {
+      background: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 32px 40px;
+      border-bottom: none;
+    }
+
+    .option-1 #site-title {
+      color: #ffffff;
+      font-size: 2.5rem;
+      letter-spacing: -0.03em;
+    }
+
+    .option-1 #site-title:hover {
+      color: #fb923c;
+    }
+
+    .option-1 .tagline {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .option-1 nav a {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .option-1 nav a:hover {
+      color: #fb923c;
+    }
+
+    .option-1 nav a.active {
+      color: #fb923c;
+    }
+
+    .option-1 nav a.active::after {
+      background: #fb923c;
+    }
+
+    .option-1 nav a.contact-btn {
+      background: #fb923c;
+      color: #000000;
+      border: 2px solid #fb923c;
+    }
+
+    .option-1 nav a.contact-btn:hover {
+      background: #fdba74;
+      border-color: #fdba74;
+      color: #000000;
+    }
+
+    /* Option 2: Elevated Glass Morphism */
+    .option-2 header {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px) saturate(180%);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      margin: 40px;
+      padding: 40px 48px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    .option-2 #site-title {
+      font-size: 2.25rem;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Option 3: Thick Border Statement */
+    .option-3 header {
+      background: transparent;
+      border-top: 6px solid #ea580c;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      margin: 0;
+      padding: 40px 40px 48px 40px;
+    }
+
+    .option-3 #site-title {
+      font-size: 2.75rem;
+      letter-spacing: -0.04em;
+    }
+
+    .option-3 .tagline {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    /* Option 4: Monochrome Brutalist */
+    .option-4 header {
+      background: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 48px 40px;
+      border-bottom: 3px solid #000000;
+    }
+
+    .option-4 #site-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .option-4 #site-title:hover {
+      color: #000000;
+    }
+
+    .option-4 .tagline {
+      display: none;
+    }
+
+    .option-4 nav ul {
+      gap: 4px;
+    }
+
+    .option-4 nav a {
+      padding: 12px 20px;
+      border: 2px solid #000000;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: #000000;
+    }
+
+    .option-4 nav a:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .option-4 nav a.active {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .option-4 nav a.active::after {
+      display: none;
+    }
+
+    .option-4 nav a.contact-btn {
+      background: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+    }
+
+    .option-4 nav a.contact-btn:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    /* Option 5: Gradient Sunset Bar */
+    .option-5 header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+      color: #ffffff;
+      margin: 0;
+      padding: 48px 40px 40px 40px;
+      border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .option-5 #site-title {
+      color: #ffffff;
+      font-size: 2.25rem;
+      letter-spacing: -0.035em;
+    }
+
+    .option-5 #site-title:hover {
+      color: #fb923c;
+    }
+
+    .option-5 .tagline {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .option-5 nav a {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .option-5 nav a:hover {
+      color: #fb923c;
+    }
+
+    .option-5 nav a.active {
+      color: #fb923c;
+    }
+
+    .option-5 nav a.active::after {
+      background: #fb923c;
+    }
+
+    .option-5 nav a.contact-btn {
+      background: #fb923c;
+      color: #ffffff;
+      border: none;
+      box-shadow: 0 2px 8px rgba(251, 146, 60, 0.3);
+    }
+
+    .option-5 nav a.contact-btn:hover {
+      background: #fdba74;
+      box-shadow: 0 4px 16px rgba(251, 146, 60, 0.4);
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Option 1: Bold Black Bar -->
+  <div class="option-container option-1">
+    <div class="option-label">Option 1: Bold Black Bar</div>
+    <header>
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" id="site-title">Writing and Development by Tommy Twardzik</a>
+          <p class="tagline">Writer. Editor. Developer. SEO.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/" class="active">Work</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:ttwardzik@gmail.com" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="option-content">
+      <h1>Sample Content</h1>
+      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Notice how the bold black bar creates strong contrast and commands attention. The white text stands out clearly against the dark background.</p>
+    </div>
+  </div>
+
+  <!-- Option 2: Elevated Glass Morphism -->
+  <div class="option-container option-2">
+    <div class="option-label">Option 2: Elevated Glass Morphism</div>
+    <header>
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" id="site-title">Writing and Development by Tommy Twardzik</a>
+          <p class="tagline">Writer. Editor. Developer. SEO.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/" class="active">Work</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:ttwardzik@gmail.com" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="option-content">
+      <h1>Sample Content</h1>
+      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>The frosted glass effect creates a modern, premium feel. The header appears to float above the page content with subtle depth.</p>
+    </div>
+  </div>
+
+  <!-- Option 3: Thick Border Statement -->
+  <div class="option-container option-3">
+    <div class="option-label">Option 3: Thick Border Statement</div>
+    <header>
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" id="site-title">Writing and Development by Tommy Twardzik</a>
+          <p class="tagline">Writer. Editor. Developer. SEO.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/" class="active">Work</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:ttwardzik@gmail.com" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="option-content">
+      <h1>Sample Content</h1>
+      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>The thick orange border creates an editorial, magazine-like aesthetic. It's bold without overwhelming the design.</p>
+    </div>
+  </div>
+
+  <!-- Option 4: Monochrome Brutalist -->
+  <div class="option-container option-4">
+    <div class="option-label">Option 4: Monochrome Brutalist</div>
+    <header>
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" id="site-title">Writing and Development by Tommy Twardzik</a>
+          <p class="tagline">Writer. Editor. Developer. SEO.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/" class="active">Work</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:ttwardzik@gmail.com" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="option-content">
+      <h1>Sample Content</h1>
+      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Stark, geometric, and unapologetically bold. The brutalist approach uses pure typography and structure with no color decoration.</p>
+    </div>
+  </div>
+
+  <!-- Option 5: Gradient Sunset Bar -->
+  <div class="option-container option-5">
+    <div class="option-label">Option 5: Gradient Sunset Bar (Recommended)</div>
+    <header>
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" id="site-title">Writing and Development by Tommy Twardzik</a>
+          <p class="tagline">Writer. Editor. Developer. SEO.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/" class="active">Work</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:ttwardzik@gmail.com" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="option-content">
+      <h1>Sample Content</h1>
+      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>The warm gradient creates depth and sophistication while connecting to the orange accent color. It's bold yet elegant.</p>
+    </div>
+  </div>
+
+</body>
+</html>

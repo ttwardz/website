@@ -91,9 +91,11 @@ body {
 
 /* Header Styles */
 header {
-    margin-bottom: var(--space-8);
-    padding: var(--space-5) 0;
-    border-bottom: 1px solid var(--border-light);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+    margin: -40px -40px var(--space-8) -40px;
+    padding: var(--space-6) 40px var(--space-5) 40px;
+    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
 
 .header-content {
@@ -110,22 +112,23 @@ header {
 }
 
 #site-title {
-    font-size: var(--text-xl);
+    font-size: 2.25rem;
     font-weight: var(--weight-bold);
-    color: var(--text-primary);
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.2s ease;
+    letter-spacing: -0.035em;
 }
 
 #site-title:hover {
-    color: var(--accent-primary);
+    color: #fb923c;
     text-decoration: none;
 }
 
 .tagline {
     margin: 0;
     font-size: var(--text-sm);
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.75);
     font-weight: var(--weight-medium);
 }
 
@@ -145,7 +148,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: rgba(255, 255, 255, 0.85);
     font-size: var(--text-sm);
     font-weight: var(--weight-medium);
     transition: color 0.2s ease;
@@ -154,12 +157,12 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-primary);
+    color: #fb923c;
     text-decoration: none;
 }
 
 nav a.active {
-    color: var(--accent-primary);
+    color: #fb923c;
 }
 
 nav a.active::after {
@@ -169,35 +172,32 @@ nav a.active::after {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--accent-primary), var(--accent-hover));
+    background: #fb923c;
 }
 
 nav a.contact-btn {
-    background-color: var(--text-primary);
-    color: var(--background);
+    background-color: #fb923c;
+    color: #ffffff;
     padding: 8px 16px;
     border-radius: 6px;
+    border: none;
     font-weight: var(--weight-semibold);
     transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(251, 146, 60, 0.3);
 }
 
 nav a.contact-btn:hover {
+    background-color: #fdba74;
+    color: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    color: var(--background);
-}
-
-@media (prefers-color-scheme: dark) {
-    nav a.contact-btn:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    }
+    box-shadow: 0 4px 16px rgba(251, 146, 60, 0.4);
 }
 
 /* Responsive Header */
 @media (max-width: 600px) {
     header {
-        padding: 20px 0;
-        margin-bottom: 40px;
+        margin: -20px -20px 40px -20px;
+        padding: 32px 20px;
     }
 
     nav ul {
