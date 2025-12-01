@@ -1,58 +1,43 @@
+/* NON-STRUCTURAL STYLING CSS - MOVED FROM STYLES.CSS */
+
+/* Reset margins and padding */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     background: var(--bg);
     color: var(--text);
     font-family: Helvetica Neue, Helvetica, sans-serif;
-    text-align: center;
 }
 
 .wrapper {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 40px;
-    text-align: left;
 }
 
+/* Header styling */
 header {
     background-color: var(--header-glass);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-header .wrapper {
-    text-align: left;
-}
-
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
 }
 
-.header-text {
-    flex: 1;
-}
-
+/* Profile picture styling */
 .profile-pic {
-    width: 70px;
-    height: 70px;
     border-radius: 12px;
-    object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     margin-bottom: 0;
-    /* margin-right: 10px; */
 }
 
+/* Header link styling */
 header a {
-    text-decoration: none;
     padding: 7px 10px;
     border-radius: 5px;
 }
@@ -68,17 +53,16 @@ header .site-subtitle {
     font-size: 0.9em;
     color: #ccc;
     margin-top: 5px;
-    /* margin-left: 10px; */
     font-weight: normal;
 }
 
+/* Navigation styling */
 nav {
     margin-top: 0px;
     margin-bottom: -10px;
 }
 
 nav li {
-    display: inline-block;
     margin: 0;
     line-height: 2.5em;
     font-weight: bold;
@@ -90,10 +74,7 @@ nav li a.selected {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-nav li:last-child {
-    float: right;
-}
-
+/* Typography styling */
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
@@ -148,6 +129,7 @@ a {
     font-weight: bold;
 }
 
+/* List styling */
 article ol li {
     line-height: 1.5em;
     margin-bottom: 10px;
@@ -155,12 +137,12 @@ article ol li {
 }
 
 ul {
-    list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1.5em;
 }
 
+/* Button styling */
 .glossy-button {
     background: linear-gradient(135deg, var(--button-glass), rgba(255, 216, 3, 0.6));
     backdrop-filter: blur(8px);
@@ -179,7 +161,6 @@ ul {
 }
 
 button {
-    display: inline-block;
     padding: 6px 8px;
     border: none;
     margin-top: 20px;
@@ -193,19 +174,17 @@ footer button {
 
 button a {
     font-size: 1.5em;
-    text-decoration: none;
     font-weight: bold;
     color: var(--button-text);
 }
 
+/* Code styling */
 pre {
     margin-top: 24px;
     margin-bottom: 24px;
     padding: 12px;
     background-color: var(--header);
     border-radius: 10px;
-    overflow-x: scroll;
-    overflow-y: hidden;
 }
 
 code {
@@ -213,10 +192,11 @@ code {
 }
 
 p code {
-    color: var(--highlight)
+    color: var(--highlight);
     font-weight: bold;
 }
 
+/* Other elements styling */
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -234,20 +214,13 @@ blockquote {
     padding: 2px 5px;
 }
 
-.fn a {
-    text-decoration: none;
-    font-style: normal;
-}
-
+/* Item list styling */
 .item-list {
-    display: grid;
-    grid-template-columns: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
 .item-list > li {
-    display: block;
     padding: 20px;
     border-radius: 20px;
     background-color: var(--block-glass);
@@ -255,7 +228,6 @@ blockquote {
     -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--text);
-    width: 100%;
 }
 
 .item-list h1 {
@@ -267,6 +239,7 @@ blockquote {
     margin-bottom: 0;
 }
 
+/* Tag styling */
 .tag-list {
     margin-bottom: 15px;
     padding-top: 0px;
@@ -275,7 +248,6 @@ blockquote {
 
 .tag-list li,
 .tag {
-    display: inline-block;
     padding: 6px 8px;
     border-radius: 6px;
     margin-right: 5px;
@@ -288,21 +260,11 @@ blockquote {
     transform: translateY(-0.5px);
 }
 
-.tag-list a,
-.tag a {
-    text-decoration: none;
-}
-
-.item-page .tag-list {
-    display: inline-block;
-}
-
 .content {
     margin-bottom: 40px;
 }
 
 .browse-all {
-    display: block;
     margin-bottom: 30px;
 }
 
@@ -312,6 +274,7 @@ blockquote {
     padding: 6px 10px;
 }
 
+/* Footer styling */
 footer {
     color: var(--text);
     opacity: 0.8;
@@ -319,88 +282,42 @@ footer {
 }
 
 footer .wrapper {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 40px;
-    text-align: right;
 }
 
+/* Image styling */
 img {
-    width: 500px;
-    max-width: 100%;
-    height: auto;
     margin-bottom: 16px;
 }
 
 .multi-column {
-    display: flex; 
-    align-items: top;
-    gap: 20px;
+    gap: 16px;
 }
 
 .multi-column img {
-    max-width: 250px;
-    height: 300px;
-    object-fit: contain;
     border-radius: 8px;
-    flex-shrink: 0;
     margin-bottom: 0;
 }
 
-.multi-column div {
-    flex: 1;
-}
-
-.theme-image-light {
-    display: block;
-}
-
-.theme-image-dark {
-    display: none;
-}
-
-/* Tooltip */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
+/* Tooltip styling */
 .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  width: 260px;
-  background-color: #555;
-  color: #fff;
-  text-align: left;
-  border-radius: 6px;
-  padding: 4px 8px;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s;
-  
-  top: -5px;
-  bottom: auto;
-  right: 110%;
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip .tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent #555;
+    border-color: transparent transparent transparent #555;
 }
 
 .tooltip:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
+    opacity: 1;
 }
 
-/*COLORS*/
+/* COLOR VARIABLES */
 :root {
     --bg: #fff;
     --header: #2d334a;
@@ -425,25 +342,25 @@ img {
         --text: #eee;
         --button-glass: rgba(255, 216, 3, 0.85);
     }
-    
+
     header .site-name {
         color: #eee;
     }
-    
+
     header .site-subtitle {
         color: #aaa;
     }
-    
+
     .theme-image-light {
         display: none;
     }
-    
+
     .theme-image-dark {
         display: block;
     }
 }
 
-/*SCREEN SIZE*/
+/* RESPONSIVE STYLING */
 @media(max-width: 600px) {
     .wrapper {
         padding: 40px 20px;
@@ -457,8 +374,14 @@ img {
     header .wrapper {
         text-align: center;
     }
-    
-    nav li:last-child {
-        float: none;
+}
+
+@media (min-width: 768px) {
+    .multi-column {
+        gap: 20px;
+    }
+
+    .multi-column img {
+        border-radius: 8px;
     }
 }
