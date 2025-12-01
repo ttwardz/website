@@ -230,35 +230,30 @@ section {
     margin-bottom: var(--space-5);
 }
 
-/* Two-column layout for sections with images on wider screens */
+/* Clear floats between sections */
 main section:has(img) {
-    display: grid;
-    grid-template-columns: 1fr minmax(auto, 200px);
-    column-gap: 30px;
-    align-items: start;
+    clear: both;
+    display: flow-root;
 }
 
-main section:has(img) h2 {
-    grid-column: 1 / -1;
-}
-
+/* Image layout - float on wider screens */
 main section:has(img) img {
-    grid-column: 2;
-    grid-row: 2 / span 10;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: var(--space-3);
+    max-height: 300px;
+    width: auto;
 }
 
 @media (max-width: 600px) {
-    main section:has(img) {
-        grid-template-columns: 1fr;
-    }
-
     main section:has(img) img {
-        grid-column: 1;
-        grid-row: auto;
-    }
-
-    img {
-        width: 65%;
+        float: none;
+        margin-left: 0;
+        margin-top: 0;
+        width: auto;
+        max-width: 65%;
+        height: auto;
+        max-height: 400px;
     }
 }
 
