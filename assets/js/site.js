@@ -1,18 +1,5 @@
-// Load HTML includes
-async function loadIncludes() {
-  // Load footer
-  const footerElement = document.querySelector('[data-include="footer"]');
-  if (footerElement) {
-    try {
-      const response = await fetch('/includes/footer.html');
-      const html = await response.text();
-      footerElement.outerHTML = html;
-    } catch (error) {
-      console.error('Failed to load footer:', error);
-    }
-  }
-
-  // After includes are loaded, run after-hours updates and set active nav
+// Initialize site
+function initSite() {
   updateSiteForAfterHours();
   setActiveNavLink();
 }
@@ -67,4 +54,4 @@ function setActiveNavLink() {
 }
 
 // Initialize when page loads
-loadIncludes();
+initSite();

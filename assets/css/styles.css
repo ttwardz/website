@@ -326,7 +326,7 @@ a:hover {
     text-underline-offset: 3px;
 }
 
-main a[href="/work/"] {
+.hero > a {
     background-color: var(--accent-primary);
     color: white;
     padding: 10px 20px;
@@ -336,7 +336,7 @@ main a[href="/work/"] {
     text-decoration: none;
 }
 
-main a[href="/work/"]:hover {
+.hero > a:hover {
     background-color: var(--accent-hover);
     text-decoration: none;
 }
@@ -425,6 +425,10 @@ footer a[href^="mailto"]:hover {
     background: var(--background-elevated);
     border: 1px solid var(--border-light);
     box-shadow: var(--shadow-light);
+}
+
+.hero + .hero {
+    margin-top: calc(var(--space-8) * -1 + var(--space-3));
 }
 
 .hero a {
