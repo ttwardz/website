@@ -227,20 +227,21 @@ main {
 }
 
 section {
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--space-4);
 }
 
-/* Clear floats between sections */
+/* Sections with images get tighter spacing */
 main section:has(img) {
     clear: both;
     display: flow-root;
+    margin-bottom: var(--space-3);
 }
 
 /* Image layout - float on wider screens */
 main section:has(img) img {
     float: right;
-    margin-left: 30px;
-    margin-bottom: var(--space-3);
+    margin-left: var(--space-4);
+    margin-bottom: var(--space-2);
     max-height: 300px;
     width: auto;
 }
@@ -258,7 +259,12 @@ main section:has(img) img {
 }
 
 article {
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--space-4);
+}
+
+/* Reduce spacing for nested sections */
+section section {
+    margin-bottom: var(--space-3);
 }
 
 h1, h2, h3 {
@@ -275,10 +281,14 @@ h1 {
 }
 
 h2 {
-    margin: var(--space-4) 0 var(--space-1);
+    margin: var(--space-3) 0 var(--space-2);
     font-size: var(--text-xl);
     font-weight: var(--weight-bold);
     color: var(--text-primary);
+}
+
+h2:first-child {
+    margin-top: 0;
 }
 
 h3 {
