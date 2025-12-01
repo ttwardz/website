@@ -92,7 +92,7 @@ body {
 /* Header Styles */
 header {
     background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
-    margin: -40px -40px var(--space-8) -40px;
+    margin: -40px -40px var(--space-4) -40px;
     padding: var(--space-6) 40px var(--space-5) 40px;
     border-bottom: 1px solid rgba(253, 186, 116, 0.3);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
