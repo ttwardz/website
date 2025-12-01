@@ -1,17 +1,5 @@
 // Load HTML includes
 async function loadIncludes() {
-  // Load header
-  const headerElement = document.querySelector('[data-include="header"]');
-  if (headerElement) {
-    try {
-      const response = await fetch('/includes/header.html');
-      const html = await response.text();
-      headerElement.outerHTML = html;
-    } catch (error) {
-      console.error('Failed to load header:', error);
-    }
-  }
-
   // Load footer
   const footerElement = document.querySelector('[data-include="footer"]');
   if (footerElement) {
