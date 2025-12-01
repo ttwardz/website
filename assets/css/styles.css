@@ -33,7 +33,7 @@
   --space-6: 4rem;        /* 64px */
   --space-8: 6rem;        /* 96px */
 
-  /* Semantic Colors - Orange Palette */
+  /* Semantic Colors - Peach/Apricot Palette */
   --background: #fafafa;
   --background-elevated: #ffffff;
   --background-subtle: #f5f5f5;
@@ -42,8 +42,8 @@
   --text-secondary: #525252;
   --text-tertiary: #737373;
 
-  --accent-primary: #ea580c;
-  --accent-hover: #c2410c;
+  --accent-primary: #fb923c;
+  --accent-hover: #fdba74;
   --accent-subtle: #ffedd5;
 
   --border-dark: #333;
@@ -91,10 +91,10 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+    background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
     margin: -40px -40px var(--space-8) -40px;
     padding: var(--space-6) 40px var(--space-5) 40px;
-    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+    border-bottom: 1px solid rgba(253, 186, 116, 0.3);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
 
@@ -103,6 +103,9 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .header-left {
@@ -135,11 +138,16 @@ header {
 /* Navigation */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 12px 20px;
     margin: 0;
     display: flex;
     gap: 24px;
     align-items: center;
+    width: 100%;
+    background: var(--background-elevated);
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav li {
@@ -148,7 +156,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--text-primary);
     font-size: var(--text-sm);
     font-weight: var(--weight-medium);
     transition: color 0.2s ease;
@@ -157,12 +165,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #fb923c;
+    color: var(--accent-primary);
     text-decoration: none;
 }
 
 nav a.active {
-    color: #fb923c;
+    color: var(--accent-primary);
 }
 
 nav a.active::after {
@@ -172,25 +180,25 @@ nav a.active::after {
     left: 0;
     right: 0;
     height: 2px;
-    background: #fb923c;
+    background: var(--accent-primary);
 }
 
 nav a.contact-btn {
-    background-color: #fb923c;
+    background-color: var(--accent-primary);
     color: #ffffff;
     padding: 8px 16px;
     border-radius: 6px;
     border: none;
     font-weight: var(--weight-semibold);
     transition: all 0.2s ease;
-    box-shadow: 0 2px 8px rgba(251, 146, 60, 0.3);
+    box-shadow: 0 2px 8px rgba(234, 88, 12, 0.2);
 }
 
 nav a.contact-btn:hover {
-    background-color: #fdba74;
+    background-color: var(--accent-hover);
     color: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(251, 146, 60, 0.4);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
 }
 
 /* Responsive Header */

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header Design Options Comparison</title>
+  <title>Option 3 Variations + Alternative Accents</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <style>
     /* Reset some base styles for this test page */
@@ -34,218 +34,203 @@
       padding: 40px;
     }
 
-    /* Option 1: Bold Black Bar */
-    .option-1 header {
-      background: #000000;
-      color: #ffffff;
-      margin: 0;
-      padding: 32px 40px;
-      border-bottom: none;
-    }
-
-    .option-1 #site-title {
-      color: #ffffff;
-      font-size: 2.5rem;
-      letter-spacing: -0.03em;
-    }
-
-    .option-1 #site-title:hover {
-      color: #fb923c;
-    }
-
-    .option-1 .tagline {
-      color: rgba(255, 255, 255, 0.75);
-    }
-
-    .option-1 nav a {
-      color: rgba(255, 255, 255, 0.85);
-    }
-
-    .option-1 nav a:hover {
-      color: #fb923c;
-    }
-
-    .option-1 nav a.active {
-      color: #fb923c;
-    }
-
-    .option-1 nav a.active::after {
-      background: #fb923c;
-    }
-
-    .option-1 nav a.contact-btn {
-      background: #fb923c;
-      color: #000000;
-      border: 2px solid #fb923c;
-    }
-
-    .option-1 nav a.contact-btn:hover {
-      background: #fdba74;
-      border-color: #fdba74;
-      color: #000000;
-    }
-
-    /* Option 2: Elevated Glass Morphism */
-    .option-2 header {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px) saturate(180%);
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 16px;
-      margin: 40px;
-      padding: 40px 48px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-    }
-
-    .option-2 #site-title {
-      font-size: 2.25rem;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Option 3: Thick Border Statement */
-    .option-3 header {
-      background: transparent;
-      border-top: 6px solid #ea580c;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-      margin: 0;
-      padding: 40px 40px 48px 40px;
-    }
-
-    .option-3 #site-title {
-      font-size: 2.75rem;
-      letter-spacing: -0.04em;
-    }
-
-    .option-3 .tagline {
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-    }
-
-    /* Option 4: Monochrome Brutalist */
-    .option-4 header {
-      background: #ffffff;
-      color: #000000;
-      margin: 0;
-      padding: 48px 40px;
-      border-bottom: 3px solid #000000;
-    }
-
-    .option-4 #site-title {
-      font-family: 'Inter', sans-serif;
-      font-size: 3rem;
-      font-weight: 900;
-      letter-spacing: -0.05em;
-      text-transform: uppercase;
-      color: #000000;
-    }
-
-    .option-4 #site-title:hover {
-      color: #000000;
-    }
-
-    .option-4 .tagline {
-      display: none;
-    }
-
-    .option-4 nav ul {
-      gap: 4px;
-    }
-
-    .option-4 nav a {
-      padding: 12px 20px;
-      border: 2px solid #000000;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      color: #000000;
-    }
-
-    .option-4 nav a:hover {
-      background: #000000;
-      color: #ffffff;
-    }
-
-    .option-4 nav a.active {
-      background: #000000;
-      color: #ffffff;
-    }
-
-    .option-4 nav a.active::after {
-      display: none;
-    }
-
-    .option-4 nav a.contact-btn {
-      background: #000000;
-      color: #ffffff;
-      border: 2px solid #000000;
-    }
-
-    .option-4 nav a.contact-btn:hover {
-      background: #ffffff;
-      color: #000000;
-    }
-
-    /* Option 5: Gradient Sunset Bar */
-    .option-5 header {
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
-      color: #ffffff;
+    /* Shared header styles */
+    .option-container header {
       margin: 0;
       padding: 48px 40px 40px 40px;
-      border-bottom: 1px solid rgba(251, 146, 60, 0.2);
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
     }
 
-    .option-5 #site-title {
+    .option-container #site-title {
       color: #ffffff;
       font-size: 2.25rem;
       letter-spacing: -0.035em;
     }
 
-    .option-5 #site-title:hover {
-      color: #fb923c;
-    }
-
-    .option-5 .tagline {
+    .option-container .tagline {
       color: rgba(255, 255, 255, 0.75);
     }
 
-    .option-5 nav a {
-      color: rgba(255, 255, 255, 0.85);
+    /* Option 1: Original #3 - Darker Forest Green + Golden Yellow */
+    .option-1 header {
+      background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
+      border-bottom: 1px solid rgba(251, 191, 36, 0.3);
     }
 
+    .option-1 #site-title:hover {
+      color: #fbbf24;
+    }
+
+    .option-1 nav a.active,
+    .option-1 nav a:hover {
+      color: #fbbf24;
+    }
+
+    .option-1 nav a.active::after {
+      background: #fbbf24;
+    }
+
+    .option-1 nav a.contact-btn {
+      background-color: #f59e0b;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+    }
+
+    .option-1 nav a.contact-btn:hover {
+      background-color: #fbbf24;
+      box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+    }
+
+    /* Option 2: Variation A - Slightly Lighter for Clarity */
+    .option-2 header {
+      background: linear-gradient(135deg, #0d2817 0%, #184d2f 100%);
+      border-bottom: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    .option-2 #site-title:hover {
+      color: #fbbf24;
+    }
+
+    .option-2 nav a.active,
+    .option-2 nav a:hover {
+      color: #fbbf24;
+    }
+
+    .option-2 nav a.active::after {
+      background: #fbbf24;
+    }
+
+    .option-2 nav a.contact-btn {
+      background-color: #f59e0b;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+    }
+
+    .option-2 nav a.contact-btn:hover {
+      background-color: #fbbf24;
+      box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+    }
+
+    /* Option 3: Variation B - More Visual Depth */
+    .option-3 header {
+      background: linear-gradient(150deg, #0a1f12 0%, #143823 50%, #0f2e1a 100%);
+      border-bottom: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    .option-3 #site-title:hover {
+      color: #fbbf24;
+    }
+
+    .option-3 nav a.active,
+    .option-3 nav a:hover {
+      color: #fbbf24;
+    }
+
+    .option-3 nav a.active::after {
+      background: #fbbf24;
+    }
+
+    .option-3 nav a.contact-btn {
+      background-color: #f59e0b;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+    }
+
+    .option-3 nav a.contact-btn:hover {
+      background-color: #fbbf24;
+      box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+    }
+
+    /* Option 4: Alternative Accent - Warm Coral/Salmon */
+    .option-4 header {
+      background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
+      border-bottom: 1px solid rgba(251, 113, 133, 0.3);
+    }
+
+    .option-4 #site-title:hover {
+      color: #fb7185;
+    }
+
+    .option-4 nav a.active,
+    .option-4 nav a:hover {
+      color: #fb7185;
+    }
+
+    .option-4 nav a.active::after {
+      background: #fb7185;
+    }
+
+    .option-4 nav a.contact-btn {
+      background-color: #f43f5e;
+      box-shadow: 0 2px 8px rgba(244, 63, 94, 0.2);
+    }
+
+    .option-4 nav a.contact-btn:hover {
+      background-color: #fb7185;
+      box-shadow: 0 4px 12px rgba(251, 113, 133, 0.3);
+    }
+
+    /* Option 5: Alternative Accent - Bright Teal/Cyan */
+    .option-5 header {
+      background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
+      border-bottom: 1px solid rgba(34, 211, 238, 0.3);
+    }
+
+    .option-5 #site-title:hover {
+      color: #22d3ee;
+    }
+
+    .option-5 nav a.active,
     .option-5 nav a:hover {
-      color: #fb923c;
-    }
-
-    .option-5 nav a.active {
-      color: #fb923c;
+      color: #22d3ee;
     }
 
     .option-5 nav a.active::after {
-      background: #fb923c;
+      background: #22d3ee;
     }
 
     .option-5 nav a.contact-btn {
-      background: #fb923c;
-      color: #ffffff;
-      border: none;
-      box-shadow: 0 2px 8px rgba(251, 146, 60, 0.3);
+      background-color: #06b6d4;
+      box-shadow: 0 2px 8px rgba(6, 182, 212, 0.2);
     }
 
     .option-5 nav a.contact-btn:hover {
+      background-color: #22d3ee;
+      box-shadow: 0 4px 12px rgba(34, 211, 238, 0.3);
+    }
+
+    /* Option 6: Alternative Accent - Soft Peach/Apricot */
+    .option-6 header {
+      background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
+      border-bottom: 1px solid rgba(253, 186, 116, 0.3);
+    }
+
+    .option-6 #site-title:hover {
+      color: #fdba74;
+    }
+
+    .option-6 nav a.active,
+    .option-6 nav a:hover {
+      color: #fdba74;
+    }
+
+    .option-6 nav a.active::after {
       background: #fdba74;
-      box-shadow: 0 4px 16px rgba(251, 146, 60, 0.4);
-      color: #ffffff;
+    }
+
+    .option-6 nav a.contact-btn {
+      background-color: #fb923c;
+      box-shadow: 0 2px 8px rgba(251, 146, 60, 0.2);
+    }
+
+    .option-6 nav a.contact-btn:hover {
+      background-color: #fdba74;
+      box-shadow: 0 4px 12px rgba(253, 186, 116, 0.3);
     }
   </style>
 </head>
 <body>
 
-  <!-- Option 1: Bold Black Bar -->
+  <!-- Option 1: Original #3 - Darker Forest Green + Golden Yellow -->
   <div class="option-container option-1">
-    <div class="option-label">Option 1: Bold Black Bar</div>
+    <div class="option-label">Option 1: Darker Forest Green + Golden Yellow ⭐ YOUR CURRENT FAVORITE</div>
     <header>
       <div class="header-content">
         <div class="header-left">
@@ -262,15 +247,16 @@
       </div>
     </header>
     <div class="option-content">
-      <h1>Sample Content</h1>
-      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Notice how the bold black bar creates strong contrast and commands attention. The white text stands out clearly against the dark background.</p>
+      <h1>Baseline - Your New Favorite</h1>
+      <p><strong>Green:</strong> Darker forest green (#0a1f12 → #143823)</p>
+      <p><strong>Yellow:</strong> Warm golden yellow (#f59e0b, #fbbf24)</p>
+      <p><strong>Why it works:</strong> Dramatic contrast makes yellow pop. Dark enough to be striking, creates strong visual hierarchy. Content will stand out against this bold header.</p>
     </div>
   </div>
 
-  <!-- Option 2: Elevated Glass Morphism -->
+  <!-- Option 2: Variation A - Slightly Lighter for Clarity -->
   <div class="option-container option-2">
-    <div class="option-label">Option 2: Elevated Glass Morphism</div>
+    <div class="option-label">Option 2: Variation - Slightly Lighter Green for Better Clarity</div>
     <header>
       <div class="header-content">
         <div class="header-left">
@@ -287,15 +273,16 @@
       </div>
     </header>
     <div class="option-content">
-      <h1>Sample Content</h1>
-      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>The frosted glass effect creates a modern, premium feel. The header appears to float above the page content with subtle depth.</p>
+      <h1>Subtle Variation: Better Readability</h1>
+      <p><strong>Green:</strong> Slightly lighter dark green (#0d2817 → #184d2f)</p>
+      <p><strong>Yellow:</strong> Same golden yellow (#f59e0b, #fbbf24)</p>
+      <p><strong>Difference:</strong> Less dramatic but clearer. Better for emphasizing content hierarchy. Still striking but slightly softer on the eyes.</p>
     </div>
   </div>
 
-  <!-- Option 3: Thick Border Statement -->
+  <!-- Option 3: Variation B - More Visual Depth -->
   <div class="option-container option-3">
-    <div class="option-label">Option 3: Thick Border Statement</div>
+    <div class="option-label">Option 3: Variation - Enhanced Gradient for More Depth</div>
     <header>
       <div class="header-content">
         <div class="header-left">
@@ -312,15 +299,16 @@
       </div>
     </header>
     <div class="option-content">
-      <h1>Sample Content</h1>
-      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>The thick orange border creates an editorial, magazine-like aesthetic. It's bold without overwhelming the design.</p>
+      <h1>Subtle Variation: More Complex Gradient</h1>
+      <p><strong>Green:</strong> 3-color gradient for added depth (#0a1f12 → #143823 → #0f2e1a)</p>
+      <p><strong>Yellow:</strong> Same golden yellow (#f59e0b, #fbbf24)</p>
+      <p><strong>Difference:</strong> More visual interest in the background. Slightly different angle (150deg). Creates subtle movement without being distracting.</p>
     </div>
   </div>
 
-  <!-- Option 4: Monochrome Brutalist -->
+  <!-- Option 4: Alternative Accent - Warm Coral/Salmon -->
   <div class="option-container option-4">
-    <div class="option-label">Option 4: Monochrome Brutalist</div>
+    <div class="option-label">Option 4: Alternative Accent - Warm Coral/Salmon Pink</div>
     <header>
       <div class="header-content">
         <div class="header-left">
@@ -337,15 +325,16 @@
       </div>
     </header>
     <div class="option-content">
-      <h1>Sample Content</h1>
-      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Stark, geometric, and unapologetically bold. The brutalist approach uses pure typography and structure with no color decoration.</p>
+      <h1>Alternative Accent: Unexpected & Striking</h1>
+      <p><strong>Green:</strong> Same darker forest green (#0a1f12 → #143823)</p>
+      <p><strong>Accent:</strong> Warm coral/salmon pink (#f43f5e, #fb7185)</p>
+      <p><strong>Why it works:</strong> Unexpected combination, very striking. Warmer than yellow, more unique. Creates energy without being unprofessional. Stands out from typical portfolios.</p>
     </div>
   </div>
 
-  <!-- Option 5: Gradient Sunset Bar -->
+  <!-- Option 5: Alternative Accent - Bright Teal/Cyan -->
   <div class="option-container option-5">
-    <div class="option-label">Option 5: Gradient Sunset Bar (Recommended)</div>
+    <div class="option-label">Option 5: Alternative Accent - Bright Teal/Cyan</div>
     <header>
       <div class="header-content">
         <div class="header-left">
@@ -362,9 +351,36 @@
       </div>
     </header>
     <div class="option-content">
-      <h1>Sample Content</h1>
-      <p>This is how the page content would look below the header. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>The warm gradient creates depth and sophistication while connecting to the orange accent color. It's bold yet elegant.</p>
+      <h1>Alternative Accent: Fresh & Modern</h1>
+      <p><strong>Green:</strong> Same darker forest green (#0a1f12 → #143823)</p>
+      <p><strong>Accent:</strong> Bright teal/cyan (#06b6d4, #22d3ee)</p>
+      <p><strong>Why it works:</strong> Cool-warm contrast. Fresh, modern, energetic. Complementary color relationship creates vibrancy. Tech-forward but still professional.</p>
+    </div>
+  </div>
+
+  <!-- Option 6: Alternative Accent - Soft Peach/Apricot -->
+  <div class="option-container option-6">
+    <div class="option-label">Option 6: Alternative Accent - Soft Peach/Apricot</div>
+    <header>
+      <div class="header-content">
+        <div class="header-left">
+          <a href="/" id="site-title">Writing and Development by Tommy Twardzik</a>
+          <p class="tagline">Writer. Editor. Developer. SEO.</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/work/" class="active">Work</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:ttwardzik@gmail.com" class="contact-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="option-content">
+      <h1>Alternative Accent: Sophisticated Warmth</h1>
+      <p><strong>Green:</strong> Same darker forest green (#0a1f12 → #143823)</p>
+      <p><strong>Accent:</strong> Soft peach/apricot (#fb923c, #fdba74)</p>
+      <p><strong>Why it works:</strong> More sophisticated than bright yellow, warmer than coral. Still warm and inviting but with more restraint. Elegant yet approachable.</p>
     </div>
   </div>
 
