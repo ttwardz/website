@@ -213,7 +213,7 @@ a.contact-btn {
     color: #ffffff;
     padding: 8px 16px;
     border-radius: 6px;
-    border: none;
+    border: 1px solid transparent;
     font-weight: var(--weight-semibold);
     font-size: var(--text-sm);
     text-decoration: none;
@@ -230,7 +230,7 @@ a.contact-btn:hover {
 }
 
 /* Responsive Header */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     header {
         margin: -20px -20px 40px -20px;
         padding: 32px 20px;
@@ -245,6 +245,7 @@ a.contact-btn:hover {
 
     nav {
         width: 100%;
+        margin: 0;
     }
 
     nav ul {
