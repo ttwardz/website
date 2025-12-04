@@ -13,9 +13,9 @@ function updateSiteForAfterHours() {
   const titleElement = document.getElementById('site-title');
   if (titleElement) {
     if (isAfterDark) {
-      titleElement.innerHTML = "Hello, You've Reached the Website of Tommy Twardzik <em>After Hours</em>";
+      titleElement.innerHTML = "Tommy Twardzik <em>After Hours</em>";
     } else {
-      titleElement.innerHTML = "Writing and Development<wbr> by Tommy Twardzik";
+      titleElement.innerHTML = "Tommy Twardzik";
     }
   }
 
