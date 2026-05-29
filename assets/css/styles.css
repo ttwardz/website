@@ -469,6 +469,29 @@ footer a[href^="mailto"]:hover {
     }
 }
 
+/* iOS Development box: Clew screenshot floated to the trailing edge.
+   Scoped with two classes so it overrides the generic `main section:has(img) img`
+   rule above. `max-height: none` removes that rule's 300px clamp; height then
+   stays auto (from the global img rule) so the screenshot's aspect ratio holds.
+   Float containment comes from `display: flow-root` on `main section:has(img)`. */
+.ios-dev .ios-dev-screenshot {
+    float: right;
+    width: 180px;
+    max-width: 40%;
+    max-height: none;
+    margin: 0 0 var(--space-3) var(--space-4);
+    border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    .ios-dev .ios-dev-screenshot {
+        float: none;
+        width: 55%;
+        max-width: 220px;
+        margin: 0 auto var(--space-3);
+    }
+}
+
 /* Hero Section: Subtle Shadow & Smooth Transitions */
 .hero {
     --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
