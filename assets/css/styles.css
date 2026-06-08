@@ -1,11 +1,11 @@
 /* CSS Variables */
 
 :root {
-  /* Font Families - System Fonts */
-  --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: Rockwell, 'Rockwell Nova', 'Roboto Slab', serif;
+    /* Font Families - System Fonts */
+    --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: Rockwell, 'Rockwell Nova', 'Roboto Slab', serif;
 
-  /* Alternate serif heading fonts:
+    /* Alternate serif heading fonts:
 
      Slab serif (bold, distinctive):
      --font-display: Rockwell, 'Rockwell Nova', 'Roboto Slab', serif;
@@ -20,75 +20,90 @@
      --font-display: Didot, 'Bodoni MT', 'Times New Roman', serif;
   */
 
-  /* Typography Scale (18px base) */
-  --text-xs: 0.8rem;      /* 14.4px */
-  --text-sm: 0.9rem;      /* 16.2px */
-  --text-base: 1rem;      /* 18px */
-  --text-md: 1.125rem;    /* 20.25px */
-  --text-lg: 1.5rem;      /* 27px */
-  --text-xl: 2rem;        /* 36px */
-  --text-2xl: 2.5rem;     /* 45px */
+    /* Typography Scale (18px base) */
+    --text-xs: 0.8rem;
+    /* 14.4px */
+    --text-sm: 0.9rem;
+    /* 16.2px */
+    --text-base: 1rem;
+    /* 18px */
+    --text-md: 1.125rem;
+    /* 20.25px */
+    --text-lg: 1.5rem;
+    /* 27px */
+    --text-xl: 2rem;
+    /* 36px */
+    --text-2xl: 2.5rem;
+    /* 45px */
 
-  /* Font Weights - simplified to universally supported values */
-  --weight-normal: 400;
-  --weight-semibold: 600;  /* for UI elements using system fonts */
-  --weight-bold: 700;
+    /* Font Weights - simplified to universally supported values */
+    --weight-normal: 400;
+    --weight-semibold: 600;
+    /* for UI elements using system fonts */
+    --weight-bold: 700;
 
-  /* Spacing Scale (8px base) */
-  --space-1: 0.5rem;      /* 8px */
-  --space-2: 1rem;        /* 16px */
-  --space-3: 1.5rem;      /* 24px */
-  --space-4: 2rem;        /* 32px */
-  --space-5: 3rem;        /* 48px */
-  --space-6: 4rem;        /* 64px */
-  --space-8: 6rem;        /* 96px */
+    /* Spacing Scale (8px base) */
+    --space-1: 0.5rem;
+    /* 8px */
+    --space-2: 1rem;
+    /* 16px */
+    --space-3: 1.5rem;
+    /* 24px */
+    --space-4: 2rem;
+    /* 32px */
+    --space-5: 3rem;
+    /* 48px */
+    --space-6: 4rem;
+    /* 64px */
+    --space-8: 6rem;
+    /* 96px */
 
-  /* Semantic Colors - Peach/Apricot Palette */
-  --background: #fafafa;
-  --background-elevated: #ffffff;
-  --background-subtle: #f5f5f5;
+    /* Semantic Colors - Peach/Apricot Palette */
+    --background: #fafafa;
+    --background-elevated: #ffffff;
+    --background-subtle: #f5f5f5;
 
-  --text-primary: #1a1a1a;
-  --text-secondary: #525252;
-  --text-tertiary: #737373;
-
-  --accent-primary: #fb923c;
-  --accent-hover: #fdba74;
-  --accent-subtle: #ffedd5;
-
-  --border-dark: #333;
-  --border-light: rgba(0, 0, 0, 0.06);
-
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
-
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-normal: 200ms ease;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f0f0f;
-    --background-elevated: #1a1a1a;
-    --background-subtle: #171717;
-
-    --text-primary: #fafafa;
-    --text-secondary: #a3a3a3;
+    --text-primary: #1a1a1a;
+    --text-secondary: #525252;
     --text-tertiary: #737373;
 
     --accent-primary: #fb923c;
     --accent-hover: #fdba74;
-    --accent-subtle: #7c2d12;
+    --accent-subtle: #ffedd5;
 
-    --border-dark: #666;
-    --border-light: rgba(255, 255, 255, 0.1);
+    --border-dark: #333;
+    --border-light: rgba(0, 0, 0, 0.06);
 
-    /* Shadows - darker for dark mode */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-  }
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 200ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0f0f0f;
+        --background-elevated: #1a1a1a;
+        --background-subtle: #171717;
+
+        --text-primary: #fafafa;
+        --text-secondary: #a3a3a3;
+        --text-tertiary: #737373;
+
+        --accent-primary: #fb923c;
+        --accent-hover: #fdba74;
+        --accent-subtle: #7c2d12;
+
+        --border-dark: #666;
+        --border-light: rgba(255, 255, 255, 0.1);
+
+        /* Shadows - darker for dark mode */
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
 }
 
 /* Basic HTML element styling */
@@ -182,10 +197,23 @@ header::before {
 }
 
 /* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* (Contact button on trailing edge — swap for gap: 12px to pull it next to the nav card) */
+
+    /* gap: 12px; */
+    /* (Contact button next to nav card — swap for justify-content: space-between for trailing edge) */
+}
+
 nav ul {
     list-style: none;
     padding: 8px 12px;
     margin: 0;
+    margin-inline-start: -12px;
+    /* pulls card left so nav text aligns with heading above */
     display: flex;
     gap: 20px;
     align-items: center;
@@ -235,12 +263,7 @@ nav a.active::after {
     left: 0;
 }
 
-/* Contact - floating pill button pinned to the trailing edge of the header */
-nav li:has(.contact-link) {
-    position: absolute;
-    inset-block-end: var(--space-2);    /* align with the nav row at the bottom */
-    inset-inline-end: 40px;             /* match header horizontal padding */
-}
+/* Contact - pill button sitting just outside the nav card */
 
 nav a.contact-link {
     display: inline-block;
@@ -275,9 +298,9 @@ nav a.contact-link:hover {
         margin-left: -12px;
         margin-right: -12px;
         width: calc(100% + 24px);
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 0;
-        padding: 8px 16px;
+        padding: 8px 0;
         border-radius: 4px;
     }
 
@@ -286,15 +309,11 @@ nav a.contact-link:hover {
     }
 
     /* Float Contact as a button pinned to the bottom-trailing corner */
-    nav li:has(.contact-link) {
+    nav>a.contact-link {
         position: fixed;
-        inset-block-start: auto;   /* reset desktop top anchor */
-        inset-block-end: 16px;     /* bottom */
-        inset-inline-end: 16px;    /* trailing (right in LTR) */
+        inset-block-end: 16px;
+        inset-inline-end: 16px;
         z-index: 100;
-    }
-
-    nav a.contact-link {
         font-size: var(--text-sm);
     }
 
@@ -348,7 +367,9 @@ section section {
     margin-bottom: var(--space-3);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-display);
     line-height: 1.2;
     letter-spacing: -0.015em;
@@ -413,7 +434,7 @@ button:focus-visible {
     outline-offset: 2px;
 }
 
-.hero > a {
+.hero>a {
     background-color: var(--accent-primary);
     color: white;
     padding: 10px 20px;
@@ -424,7 +445,7 @@ button:focus-visible {
     margin-top: var(--space-2);
 }
 
-.hero > a:hover {
+.hero>a:hover {
     background-color: var(--accent-hover);
     text-decoration: none;
 }
@@ -443,6 +464,7 @@ img[src*="-dark.PNG"] {
 
 /* Show dark theme images and hide light theme images in dark mode */
 @media (prefers-color-scheme: dark) {
+
     img[src*="-light.png"],
     img[src*="-light.PNG"] {
         display: none;
@@ -539,7 +561,7 @@ footer a[href^="mailto"]:hover {
     box-shadow: var(--shadow-light);
 }
 
-.hero + .hero {
+.hero+.hero {
     margin-top: calc(var(--space-8) * -1 + var(--space-3));
 }
 
@@ -598,7 +620,7 @@ time {
         margin-bottom: var(--space-5);
     }
 
-    .hero + .hero {
+    .hero+.hero {
         margin-top: calc(var(--space-5) * -1 + var(--space-2));
     }
 }
