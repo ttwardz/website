@@ -112,11 +112,25 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #0a1f12 0%, #143823 100%);
+    position: relative;
+    background: linear-gradient(to bottom right, #081a0f 0%, #0f4a29 100%);
     margin: -40px -40px var(--space-4) -40px;
     padding: var(--space-6) 40px var(--space-2) 40px;
     border-bottom: 1px solid rgba(253, 186, 116, 0.3);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+/* Glassy sheen across the top of the banner */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 55%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, transparent 100%);
+    pointer-events: none;
 }
 
 .header-content {
@@ -221,17 +235,25 @@ nav a.active::after {
     left: 0;
 }
 
-/* Contact link - full button on hover */
+/* Contact - floating pill button pinned to the trailing edge of the header */
+nav li:has(.contact-link) {
+    position: absolute;
+    inset-block-end: var(--space-2);    /* align with the nav row at the bottom */
+    inset-inline-end: 40px;             /* match header horizontal padding */
+}
+
 nav a.contact-link {
     display: inline-block;
-    padding: 8px;
-    margin: -8px;
-    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 999px;
+    background-color: var(--accent-primary);
+    color: #ffffff;
+    box-shadow: var(--shadow-md);
 }
 
 nav a.contact-link:hover {
-    background-color: var(--accent-primary);
-    color: #ffffff;
+    background-color: var(--accent-hover);
 }
 
 /* Responsive Header */
@@ -263,10 +285,22 @@ nav a.contact-link:hover {
         font-size: var(--text-xs);
     }
 
+    /* Float Contact as a button pinned to the bottom-trailing corner */
+    nav li:has(.contact-link) {
+        position: fixed;
+        inset-block-start: auto;   /* reset desktop top anchor */
+        inset-block-end: 16px;     /* bottom */
+        inset-inline-end: 16px;    /* trailing (right in LTR) */
+        z-index: 100;
+    }
+
     nav a.contact-link {
-        padding: 8px 10px;
-        margin: -8px -10px;
-        border-radius: 4px;
+        font-size: var(--text-sm);
+    }
+
+    /* Clearance so the floating button doesn't cover the footer links */
+    footer {
+        padding-bottom: 72px;
     }
 }
 
@@ -448,19 +482,20 @@ footer nav a {
 }
 
 footer a[href^="mailto"] {
-    background-color: var(--text-primary);
-    color: var(--background);
-    padding: 8px 16px;
-    border-radius: 6px;
+    background-color: var(--accent-primary);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 999px;
     font-weight: var(--weight-semibold);
+    box-shadow: var(--shadow-md);
     transition: all 0.2s ease;
     display: inline-block;
 }
 
 footer a[href^="mailto"]:hover {
+    background-color: var(--accent-hover);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    color: var(--background);
+    color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -551,6 +586,11 @@ time {
 @media (max-width: 600px) {
     body {
         padding: 20px;
+    }
+
+    /* The floating nav Contact button replaces the footer one on mobile */
+    footer a[href^="mailto"] {
+        display: none;
     }
 
     .hero {
