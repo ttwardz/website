@@ -196,8 +196,8 @@ header::before {
     letter-spacing: 0.05em;
 }
 
-/* Navigation */
-nav {
+/* Navigation (header only — footer nav has its own styles below) */
+header nav {
     display: flex;
     align-items: center;
     width: 100%;
@@ -208,7 +208,7 @@ nav {
     /* (Contact button next to nav card — swap for justify-content: space-between for trailing edge) */
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 8px 12px;
     margin: 0;
@@ -223,11 +223,11 @@ nav ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav li {
+header nav li {
     margin: 0;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: var(--text-primary);
     font-size: var(--text-sm);
@@ -237,16 +237,16 @@ nav a {
     white-space: nowrap;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--accent-primary);
 }
 
-nav a.active {
+header nav a.active {
     color: var(--accent-primary);
 }
 
 /* Animated underline for nav links (not contact) */
-nav a:not(.contact-link)::after {
+header nav a:not(.contact-link)::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -257,15 +257,15 @@ nav a:not(.contact-link)::after {
     transition: width 0.2s ease, left 0.2s ease;
 }
 
-nav a:not(.contact-link):hover::after,
-nav a.active::after {
+header nav a:not(.contact-link):hover::after,
+header nav a.active::after {
     width: 100%;
     left: 0;
 }
 
 /* Contact - pill button sitting just outside the nav card */
 
-nav a.contact-link {
+header nav a.contact-link {
     display: inline-block;
     padding: 12px 20px;
     margin: 0;
@@ -275,7 +275,7 @@ nav a.contact-link {
     box-shadow: var(--shadow-md);
 }
 
-nav a.contact-link:hover {
+header nav a.contact-link:hover {
     background-color: var(--accent-hover);
 }
 
@@ -290,11 +290,11 @@ nav a.contact-link:hover {
         font-size: 1.5rem;
     }
 
-    nav {
+    header nav {
         width: 100%;
     }
 
-    nav ul {
+    header nav ul {
         margin-left: -12px;
         margin-right: -12px;
         width: calc(100% + 24px);
@@ -304,12 +304,12 @@ nav a.contact-link:hover {
         border-radius: 4px;
     }
 
-    nav a {
+    header nav a {
         font-size: var(--text-xs);
     }
 
     /* Float Contact as a button pinned to the bottom-trailing corner */
-    nav>a.contact-link {
+    header nav > a.contact-link {
         position: fixed;
         inset-block-end: 16px;
         inset-inline-end: 16px;
