@@ -294,18 +294,45 @@ header nav a.contact-link:hover {
         width: 100%;
     }
 
+    /* Option A: pill-highlight nav, lives on the green banner */
     header nav ul {
         margin-left: -12px;
         margin-right: -12px;
         width: calc(100% + 24px);
-        justify-content: space-evenly;
-        gap: 0;
-        padding: 8px 0;
-        border-radius: 4px;
+        gap: 3px;
+        padding: 4px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.12);
+        border: none;
+        box-shadow: none;
+    }
+
+    header nav li {
+        flex: 1;
     }
 
     header nav a {
-        font-size: var(--text-xs);
+        display: block;
+        text-align: center;
+        padding: 9px 4px;
+        border-radius: 7px;
+        font-size: 0.85rem;
+        color: #ffffff; /* full white — max contrast on green banner, dark mode safe */
+    }
+
+    header nav a.active {
+        background: rgba(255, 255, 255, 0.95);
+        color: #0f2c1b;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Suppress desktop hover color and underline animation on mobile */
+    header nav a:hover {
+        color: #ffffff;
+    }
+
+    header nav a:not(.contact-link)::after {
+        display: none;
     }
 
     /* Float Contact as a button pinned to the bottom-trailing corner */
